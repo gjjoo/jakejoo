@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>주근재 | 朱槿栽 | JakeJoo</title>
-  <meta name="description" content="주근재 | 朱槿栽 | JakeJoo"/>
+  <title>JakeJoo | FrontEnd Developer</title>
+  <meta name="description" content="JakeJoo | FrontEnd Developer"/>
 
   <link rel="stylesheet" href="normalize.css">
   <style>
@@ -16,28 +16,25 @@
       background-color: #2a2e39;
     }
 
+    h1 {
+      font-size: 2.4em;
+    }
+
+    h2 {
+      font-size: 1.4em;
+    }
+
     h3, h4 {
       display: inline;
     }
 
-    .container {
-      margin: 5% 10%;
-      padding: 60px 40px;
-      background-color: #fefefe;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    @media (max-width: 480px) {
-      .container {
-        margin: 10px;
-        padding: 20px;
-      }
+    hr {
+      border-style: dashed;
+      border-color: gray;
     }
 
-    .icon {
-      width: 24px;
-      background-color: white;
+    img {
       vertical-align: bottom;
-      cursor: pointer;
     }
 
     p {
@@ -56,30 +53,90 @@
     dt, dd {
       font-size: 14px;
     }
-    .icon-container .icon {
+
+    dt {
+      margin-top: 4px;
+    }
+
+    dd {
+      margin-bottom: 2px;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    .container {
+      margin: 5% 10%;
+      padding: 60px 40px;
+      background-color: #fefefe;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    @media (max-width: 480px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+    }
+
+    .image {
+      border: 1px solid #E6E6E6;
+      border-radius: 50%;
+    }
+
+    .icon {
+      position: relative;
+      display: inline-block;
+      margin-right: 2px;
+      transition: all .2s ease;
+    }
+    .icon-container .icon > img {
       margin: 2px 0;
       border: 1px solid #E6E6E6;
       border-radius: 3px;
       padding: 4px;
-      width: 24px;
-      cursor: default;
-      transition: all .2s ease;
+      width: 26px;
+      background-color: white;
     }
-    .icon-container.big .icon {
-      width: 48px;
+    .icon-container .icon:after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 4px;
+      padding: 2px 0 0 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      font-size: 10px;
+      color: white;
+      text-align: center;
     }
     .icon-container .icon:hover {
-      transform: scale(1.3);
+      transform: scale(1.26);
+      z-index: 1;
+    }
+    .icon-container.big .icon:after {
+      border-radius: 6px;
+      padding: 2px 0 1px 0;
+      font-size: 12px;
+    }
+    .icon-container.big .icon > img {
+      width: 48px;
     }
   </style>
 </head>
 <body>
 <div class="container">
-  <h1>주근재, 朱槿栽, Jake Joo</h1>
-  <p>현재 구직중, <a href="mailto:joogeunjae@gmail.com">joogeunjae@gmail.com</a> 으로 연락 주세요!</p>
+  <h1>주근재, JakeJoo <br><small>FrontEnd Developer</small></h1>
+  <p>언젠가는 목적지에 도달하겠지 하는 마음으로 걸어간다면 그것만으로는 충분하지 않다</p>
+  <p>그 한 걸음 한 걸음이 바로 도달하려는 곳이고, 그 한 걸음다운 가치가 있어야 한다</p>
+  <small>- 이케다 다이사쿠 -</small>
+  <br><br>
 
   <h2>경력사항</h2>
-  <ul>
+  <ul id="experience">
     <li>
       <h3>(주)바풀, 프론트엔드 개발자 <small>16.02 ~ 17.09 (서비스종료)</small></h3>
       <p>바풀에서 제공하는 전체 웹 페이지 개발 및 유지보수 담당</p>
@@ -90,29 +147,50 @@
       <p>대학교 평가시스템 개발 및 유지보수. BI, ERP, 빅데이터 등을 이용하여 학교 및 기업 솔 루션 개발</p>
     </li>
   </ul>
+  <br>
 
   <h2>프로젝트</h2>
-  <ul>
+  <ul id="projects">
     <li>
       <h3>바풀 스타터 키트</h3>
       <a href="https://github.com/OpenBapul/bapul-starter-kit" target="_blank">
-        <img class="icon" src="./assets/images/github.svg" alt="깃허브 소스코드 보러가기" title="깃허브 소스코드 보러가기" />
+        <img class="image" src="./assets/images/github.svg" alt="깃허브 소스코드 보러가기" title="깃허브 소스코드 보러가기" style="width:24px" />
       </a>
       <a href="https://drive.google.com/open?id=158RKo6_W7-b0GKDNM3DW_b2GnUYCAHWR" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>사내 관리자용 웹 스타터 키트</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-          <img class="icon" src="./assets/images/babel.png" alt="Babel" title="Babel" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Gulp">
+            <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+          </span>
+          <span class="icon" data-label="Babel">
+            <img src="./assets/images/babel.png" alt="Babel" title="Babel" />
+          </span>
+          <span class="icon" data-label="Babel">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>Bootstrap, Meterial을 활용하여 바풀만의 빠른 웹 개발을 위한 CSS 라이브러리 프로젝트 개발</dd>
@@ -122,19 +200,37 @@
     <li>
       <h3>바풀 회사 소개 홈페이지</h3>
       <a href="https://drive.google.com/open?id=11wWUtEvuHNGhX8Rv2uHgJ7_97OsmQ-2Q" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>바풀 서비스 및 회사 홍보용 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="jQuery">
+            <img src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Gulp">
+            <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>바풀에서 제공하는 서비스 홍보 및 회사 소개 홈페이지 개발</dd>
@@ -144,21 +240,49 @@
     <li>
       <h3>바풀 관리자</h3>
       <dl>
+        <dt>설명</dt>
+        <dd>회사 내부 관리용 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-          <img class="icon" src="./assets/images/babel.png" alt="Babel" title="Babel" />
-          <img class="icon" src="./assets/images/mongodb.png" alt="MongoDB" title="MongoDB" />
-          <img class="icon" src="./assets/images/google-app-engine.png" alt="Google API" title="Google API" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Gulp">
+            <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+          </span>
+          <span class="icon" data-label="Babel">
+            <img src="./assets/images/babel.png" alt="Babel" title="Babel" />
+          </span>
+          <span class="icon" data-label="MongoDB">
+            <img src="./assets/images/mongodb.png" alt="MongoDB" title="MongoDB" />
+          </span>
+          <span class="icon" data-label="Google API">
+            <img src="./assets/images/google-app-engine.png" alt="Google API" title="Google API" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Nginx">
+            <img src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>사내 관리용 페이지 개발(Bapul Starter Kit 사용): 계정관리 및 각종 이벤트 처리. 특히 구글 프로그램과 연동하여 수치 계산</dd>
@@ -168,21 +292,43 @@
     <li>
       <h3>바로풀기</h3>
       <a href="https://drive.google.com/open?id=1cc1QA1_drfnB-eXLzWslc6S8iiYiMay5" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>사진을 기반으로 질문과 답변을 이용할 수 있는 수학전문 서비스</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/less.png" alt="Less" title="Less" />
-          <img class="icon" src="./assets/images/coffeescript.png" alt="Coffeescript" title="Coffeescript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/python.png" alt="Python" title="Python" />
-          <img class="icon" src="./assets/images/django.png" alt="Django" title="Django" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Less">
+            <img src="./assets/images/less.png" alt="Less" title="Less" />
+          </span>
+          <span class="icon" data-label="Coffeescript">
+            <img src="./assets/images/coffeescript.png" alt="Coffeescript" title="Coffeescript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Python">
+            <img src="./assets/images/python.png" alt="Python" title="Python" />
+          </span>
+          <span class="icon" data-label="Django">
+            <img src="./assets/images/django.png" alt="Django" title="Django" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Nginx">
+            <img src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>바풀 핵심 어플 바로풀기 웹 서비스 개발: 주요 기능으로 사진기반 질문과 답변, 회원 정보, 이야기 게시판, 이벤트 및 공지사항 채널, 그룹 페이지 제공</dd>
@@ -192,21 +338,43 @@
     <li>
       <h3>바로풀기 관리자</h3>
       <a href="https://drive.google.com/open?id=1Tx7ZS8CK35J1zOTpxkdp1EIWqtMmKeZD" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>바로풀기 서비스의 모든것을 관리하는 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/less.png" alt="Less" title="Less" />
-          <img class="icon" src="./assets/images/coffeescript.png" alt="Coffeescript" title="Coffeescript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/python.png" alt="Python" title="Python" />
-          <img class="icon" src="./assets/images/django.png" alt="Django" title="Django" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Less">
+            <img src="./assets/images/less.png" alt="Less" title="Less" />
+          </span>
+          <span class="icon" data-label="Coffeescript">
+            <img src="./assets/images/coffeescript.png" alt="Coffeescript" title="Coffeescript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Python">
+            <img src="./assets/images/python.png" alt="Python" title="Python" />
+          </span>
+          <span class="icon" data-label="Django">
+            <img src="./assets/images/django.png" alt="Django" title="Django" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Nginx">
+            <img src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>바로풀기 관리용 페이지 개발: 각종 신고, 베스트글, 회원, 선생님, 질문 및 그룹, 정적 이미지 생성, 푸쉬 등을 관리</dd>
@@ -216,19 +384,37 @@
     <li>
       <h3>바풀공부방 소개</h3>
       <a href="https://drive.google.com/open?id=1Jk4jYvZEUF17ry0x-rdSHnUSV7UW4rZU" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>1:1 학생과 선생님을 매칭시켜 스마트 과외를 제공하는 바풀공부방을 소개하는 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/python.png" alt="Python" title="Python" />
-          <img class="icon" src="./assets/images/django.png" alt="Django" title="Django" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Python">
+            <img src="./assets/images/python.png" alt="Python" title="Python" />
+          </span>
+          <span class="icon" data-label="Django">
+            <img src="./assets/images/django.png" alt="Django" title="Django" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>홍보용 렌딩 페이지, 공부방 서비스에 대한 고객센터 페이지 개발</dd>
@@ -238,21 +424,43 @@
     <li>
       <h3>바풀공부방 동영상 홍보</h3>
       <a href="https://drive.google.com/open?id=17tDOhaIYoATUDya0sb20mSn1DfXxlwAj" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>유료서비스인 바풀공부방의 일부 기능을 간접적으로 체험할 수 있는 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/svg.png" alt="SVG" title="SVG" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/python.png" alt="Python" title="Python" />
-          <img class="icon" src="./assets/images/django.png" alt="Django" title="Django" />
-          <img class="icon" src="./assets/images/firebase.jpg" alt="Firebase" title="Firebase" />
-          <img class="icon" src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="SVG">
+            <img src="./assets/images/svg.png" alt="SVG" title="SVG" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Python">
+            <img src="./assets/images/python.png" alt="Python" title="Python" />
+          </span>
+          <span class="icon" data-label="Django">
+            <img src="./assets/images/django.png" alt="Django" title="Django" />
+          </span>
+          <span class="icon" data-label="Firebase">
+            <img src="./assets/images/firebase.jpg" alt="Firebase" title="Firebase" />
+          </span>
+          <span class="icon" data-label="Mobile">
+            <img src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>유료앱인 바풀공부방을 간접적으로 체험할 수 있도록 몇몇 선생님들의 답변과 동영상을 웹으로 제공할 수 있도록 개발</dd>
@@ -262,42 +470,87 @@
     <li>
       <h3>바풀공부방 관리자</h3>
       <a href="https://drive.google.com/open?id=1GsgzXIeSfb8iO-7Y35K5sKy1Wm7ao_cV" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>바풀공부방의 모든것을 관리하는 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-          <img class="icon" src="./assets/images/babel.png" alt="Babel" title="Babel" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Gulp">
+            <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+          </span>
+          <span class="icon" data-label="Babel">
+            <img src="./assets/images/babel.png" alt="Babel" title="Babel" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
-        <dd>바풀공부방 관리자 페이지 개발(Bapul Starter Kit 사용): 회원 및 선생님 관리, 선생님 심사, 수업 관리, 결제 관리, 프로모션 및 이벤트 관리, 앱 팝업 및 배너 관리 등 효과적으로 바풀공부방을 관리할 수 있는 페이지</dd>
+        <dd>바풀공부방 관리자 페이지 개발(Bapul Starter Kit 사용)</dd>
+        <dd>회원 및 선생님 관리, 선생님 심사, 수업 관리, 결제 관리, 프로모션 및 이벤트 관리, 앱 팝업 및 배너 관리 등 효과적으로 바풀공부방을 관리할 수 있는 페이지</dd>
       </dl>
     </li>
 
     <li>
       <h3>바로단어장 관리자</h3>
       <dl>
+        <dt>설명</dt>
+        <dd>사진을 찍어 영어단어장으로 만들어주는 바로단어장의 관리자 페이지</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-          <img class="icon" src="./assets/images/babel.png" alt="Babel" title="Babel" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Gulp">
+            <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+          </span>
+          <span class="icon" data-label="Babel">
+            <img src="./assets/images/babel.png" alt="Babel" title="Babel" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>(Bapul Starter Kit 사용)하여 개발: 사진을 인식해 단어장으로 만들어주는 서비스로 관리자 기능은 팝업 및 배너 관리만 사용</dd>
@@ -307,48 +560,102 @@
     <li>
       <h3>강의실</h3>
       <a href="https://drive.google.com/open?id=1pe2qO-JbApc8TqWaIjq6g7Kcd56yrowH" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>중, 고등학교 수학전문 문제학습 및 인강 서비스</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/d3.png" alt="D3" title="D3" />
-          <img class="icon" src="./assets/images/angular2.jpg" alt="Angular2" title="Angular2" />
-          <img class="icon" src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
-          <img class="icon" src="./assets/images/angular-cli.jpg" alt="Angular-cli" title="Angular-cli" />
-          <img class="icon" src="./assets/images/pwa.png" alt="PWA" title="PWA" />
-          <img class="icon" src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
-          <img class="icon" src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="D3">
+            <img src="./assets/images/d3.png" alt="D3" title="D3" />
+          </span>
+          <span class="icon" data-label="Angular2">
+            <img src="./assets/images/angular2.jpg" alt="Angular2" title="Angular2" />
+          </span>
+          <span class="icon" data-label="Typescript">
+            <img src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Webpack">
+            <img src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
+          </span>
+          <span class="icon" data-label="Angular cli">
+            <img src="./assets/images/angular-cli.jpg" alt="Angular cli" title="Angular cli" />
+          </span>
+          <span class="icon" data-label="PWA">
+            <img src="./assets/images/pwa.png" alt="PWA" title="PWA" />
+          </span>
+          <span class="icon" data-label="Mobile">
+            <img src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
+          </span>
+          <span class="icon" data-label="Desktop">
+            <img src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>수학문제, 개념동영상을 학년별 영역별을 연계시켜 수학을 체계적으로 공부할수 있는 웹사이트 개발</dd>
+        <dd>강의동영상시청,문제풀이,진도평가,학습현황 페이지 데스크탑 및 모바일용으로 각각 개발</dd>
+        <dd>자체 회원 로그인/회원가입 및 소셜 로그인 서비스 구현</dd>
+        <dd>강의실 지도, 각 학습 데이터를 활용한 현황 차트 개발 (D3.js)</dd>
+        <dd>자체 웹 서버에서 Math 데이터를 SVG 데이터로 변환 작업</dd>
       </dl>
     </li>
 
     <li>
       <h3>강의실 결제</h3>
       <a href="https://drive.google.com/open?id=1ww0zAOeZH5oB6NIR7SkoEySvp-NbfbGs" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>강의실만을 전용으로 한 웹결제 시스템</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/angular2.jpg" alt="Angular2" title="Angular2" />
-          <img class="icon" src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
-          <img class="icon" src="./assets/images/angular-cli.jpg" alt="Angular-cli" title="Angular-cli" />
-          <img class="icon" src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="Angular2">
+            <img src="./assets/images/angular2.jpg" alt="Angular2" title="Angular2" />
+          </span>
+          <span class="icon" data-label="Typescript">
+            <img src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Webpack">
+            <img src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
+          </span>
+          <span class="icon" data-label="Angular cli">
+            <img src="./assets/images/angular-cli.jpg" alt="Angular cli" title="Angular cli" />
+          </span>
+          <span class="icon" data-label="Mobile">
+            <img src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>강의실 전용 결제 페이지 개발</dd>
@@ -358,20 +665,40 @@
     <li>
       <h3>바풀 프로모션</h3>
       <a href="https://drive.google.com/open?id=1dIrIcKXdpNTGKBRrIdM-YzQki2t3r6NF" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>프로모션 및 이벤트 페이지를 별도 도메인으로 따로 운영하여 관리하기 위한 목적으로 사용</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/es6.jpg" alt="ES6" title="ES6" />
-          <img class="icon" src="./assets/images/vuejs.png" alt="Vuejs" title="Vuejs" />
-          <img class="icon" src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/pug.png" alt="Pug" title="Pug" />
-          <img class="icon" src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
-          <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="ES6">
+            <img src="./assets/images/es6.jpg" alt="ES6" title="ES6" />
+          </span>
+          <span class="icon" data-label="Vuejs">
+            <img src="./assets/images/vuejs.png" alt="Vuejs" title="Vuejs" />
+          </span>
+          <span class="icon" data-label="Webpack">
+            <img src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Pug">
+            <img src="./assets/images/pug.png" alt="Pug" title="Pug" />
+          </span>
+          <span class="icon" data-label="Mobile">
+            <img src="./assets/images/mobile.png" alt="Mobile" title="Mobile" />
+          </span>
+          <span class="icon" data-label="Azure">
+            <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>바풀에서 제공하는 모든 서비스에 대한 프로모션 페이지 개발</dd>
@@ -383,18 +710,42 @@
       <dl>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
-          <img class="icon" src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
-          <img class="icon" src="./assets/images/java.png" alt="Java" title="Java" />
-          <img class="icon" src="./assets/images/spring.png" alt="Spring" title="Spring" />
-          <img class="icon" src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
-          <img class="icon" src="./assets/images/ibatis.jpg" alt="iBatis" title="iBatis" />
-          <img class="icon" src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
-          <img class="icon" src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
-          <img class="icon" src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
-          <img class="icon" src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="jQuery">
+            <img src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
+          </span>
+          <span class="icon" data-label="JSP">
+            <img src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
+          </span>
+          <span class="icon" data-label="Java">
+            <img src="./assets/images/java.png" alt="Java" title="Java" />
+          </span>
+          <span class="icon" data-label="Spring">
+            <img src="./assets/images/spring.png" alt="Spring" title="Spring" />
+          </span>
+          <span class="icon" data-label="Hibernate">
+            <img src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
+          </span>
+          <span class="icon" data-label="Hibernate">
+            <img src="./assets/images/ibatis.jpg" alt="iBatis" title="iBatis" />
+          </span>
+          <span class="icon" data-label="Oracle">
+            <img src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
+          </span>
+          <span class="icon" data-label="Desktop">
+            <img src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
+          </span>
+          <span class="icon" data-label="Apache">
+            <img src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
+          </span>
+          <span class="icon" data-label="Tomcat">
+            <img src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>성과평가, 다면평가, 교원업적평가, 직원역량평가 시스템 유지보수</dd>
@@ -405,18 +756,42 @@
       <dl>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
-          <img class="icon" src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
-          <img class="icon" src="./assets/images/java.png" alt="Java" title="Java" />
-          <img class="icon" src="./assets/images/spring.png" alt="Spring" title="Spring" />
-          <img class="icon" src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
-          <img class="icon" src="./assets/images/ibatis.jpg" alt="iBatis" title="iBatis" />
-          <img class="icon" src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
-          <img class="icon" src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
-          <img class="icon" src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
-          <img class="icon" src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="jQuery">
+            <img src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
+          </span>
+          <span class="icon" data-label="JSP">
+            <img src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
+          </span>
+          <span class="icon" data-label="Java">
+            <img src="./assets/images/java.png" alt="Java" title="Java" />
+          </span>
+          <span class="icon" data-label="Spring">
+            <img src="./assets/images/spring.png" alt="Spring" title="Spring" />
+          </span>
+          <span class="icon" data-label="Hibernate">
+            <img src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
+          </span>
+          <span class="icon" data-label="iBatis">
+            <img src="./assets/images/ibatis.jpg" alt="iBatis" title="iBatis" />
+          </span>
+          <span class="icon" data-label="iBatis">
+            <img src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
+          </span>
+          <span class="icon" data-label="Desktop">
+            <img src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
+          </span>
+          <span class="icon" data-label="Apache">
+            <img src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
+          </span>
+          <span class="icon" data-label="Tomcat">
+            <img src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>평가 솔루션 개발 및 유지보수, 차트 및 그리드 도입</dd>
@@ -427,24 +802,57 @@
       <dl>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
-          <img class="icon" src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
-          <img class="icon" src="./assets/images/java.png" alt="Java" title="Java" />
-          <img class="icon" src="./assets/images/spring.png" alt="Spring" title="Spring" />
-          <img class="icon" src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
-          <img class="icon" src="./assets/images/mybatis.png" alt="Mybatis" title="Mybatis" />
-          <img class="icon" src="./assets/images/amcharts.png" alt="AmChart" title="AmChart" />
-          <img class="icon" src="./assets/images/highcharts.jpg" alt="Highcharts" title="Highcharts" />
-          <img class="icon" src="./assets/images/axisj.png" alt="Axisj" title="Axisj" />
-          <img class="icon" src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
-          <img class="icon" src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
-          <img class="icon" src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
-          <img class="icon" src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="jQuery">
+            <img src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
+          </span>
+          <span class="icon" data-label="JSP">
+            <img src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
+          </span>
+          <span class="icon" data-label="Java">
+            <img src="./assets/images/java.png" alt="Java" title="Java" />
+          </span>
+          <span class="icon" data-label="Spring">
+            <img src="./assets/images/spring.png" alt="Spring" title="Spring" />
+          </span>
+          <span class="icon" data-label="Hibernate">
+            <img src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
+          </span>
+          <span class="icon" data-label="Mybatis">
+            <img src="./assets/images/mybatis.png" alt="Mybatis" title="Mybatis" />
+          </span>
+          <span class="icon" data-label="AmChart">
+            <img src="./assets/images/amcharts.png" alt="AmChart" title="AmChart" />
+          </span>
+          <span class="icon" data-label="Highcharts">
+            <img src="./assets/images/highcharts.jpg" alt="Highcharts" title="Highcharts" />
+          </span>
+          <span class="icon" data-label="Axisj">
+            <img src="./assets/images/axisj.png" alt="Axisj" title="Axisj" />
+          </span>
+          <span class="icon" data-label="Oracle">
+            <img src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
+          </span>
+          <span class="icon" data-label="Desktop">
+            <img src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
+          </span>
+          <span class="icon" data-label="Apache">
+            <img src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
+          </span>
+          <span class="icon" data-label="Tomcat">
+            <img src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
-        <dd>성과평가 시스템 유지보수</dd>
+        <dd>평가 솔루션 개발 및 유지보수, 차트 및 그리드 도입</dd>
+        <dd>HightCharts, AmCharts를 이용하여 데이터 시각화 구현</dd>
+        <dd>Axisj 라이브러리를 이용하여 그리드 구현</dd>
+        <dd>오라클 프로시져, 패키지를 이용하여 평가시스템 데이터 맞춤 개발</dd>
       </dl>
     </li>
     <li>
@@ -452,207 +860,432 @@
       <dl>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
-          <img class="icon" src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
-          <img class="icon" src="./assets/images/java.png" alt="Java" title="Java" />
-          <img class="icon" src="./assets/images/spring.png" alt="Spring" title="Spring" />
-          <img class="icon" src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
-          <img class="icon" src="./assets/images/mybatis.png" alt="Mybatis" title="Mybatis" />
-          <img class="icon" src="./assets/images/redmine.png" alt="Redmine" title="Redmine" />
-          <img class="icon" src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
-          <img class="icon" src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
-          <img class="icon" src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
-          <img class="icon" src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="jQuery">
+            <img src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
+          </span>
+          <span class="icon" data-label="JSP">
+            <img src="./assets/images/jsp.jpg" alt="JSP" title="JSP" />
+          </span>
+          <span class="icon" data-label="Java">
+            <img src="./assets/images/java.png" alt="Java" title="Java" />
+          </span>
+          <span class="icon" data-label="Spring">
+            <img src="./assets/images/spring.png" alt="Spring" title="Spring" />
+          </span>
+          <span class="icon" data-label="Hibernate">
+            <img src="./assets/images/hibernate.png" alt="Hibernate" title="Hibernate" />
+          </span>
+          <span class="icon" data-label="Mybatis">
+            <img src="./assets/images/mybatis.png" alt="Mybatis" title="Mybatis" />
+          </span>
+          <span class="icon" data-label="Redmine">
+            <img src="./assets/images/redmine.png" alt="Redmine" title="Redmine" />
+          </span>
+          <span class="icon" data-label="Oracle">
+            <img src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
+          </span>
+          <span class="icon" data-label="Desktop">
+            <img src="./assets/images/desktop.png" alt="Desktop" title="Desktop" />
+          </span>
+          <span class="icon" data-label="Apache">
+            <img src="./assets/images/apache.jpg" alt="Apache" title="Apache" />
+          </span>
+          <span class="icon" data-label="Tomcat">
+            <img src="./assets/images/tomcat.png" alt="Tomcat" title="Tomcat" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
         <dd>Redmine을 Custom하여 화면을 회사에 맞게 재구현</dd>
       </dl>
     </li>
   </ul>
+  <br>
 
   <h2>사이드 프로젝트</h2>
-  <ul>
+  <ul id="side-projects">
     <li>
       <h3>할 일</h3>
       <a href="https://github.com/weooops/todo-web" target="_blank">
-        <img class="icon" src="./assets/images/github.svg" alt="WEB 깃허브" title="WEB 깃허브" />
+        <img class="image" src="./assets/images/github.svg" alt="WEB 깃허브" title="WEB 깃허브" style="width:24px" />
       </a>
       <a href="https://github.com/weooops/todo-api" target="_blank">
-        <img class="icon" src="./assets/images/github.svg" alt="API 깃허브" title="API 깃허브" />
+        <img class="image" src="./assets/images/github.svg" alt="API 깃허브" title="API 깃허브" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>글로벌 SNS기반으로 모두와 함께하는 TODO 리스트</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/react.png" alt="React" title="React" />
-          <img class="icon" src="./assets/images/redux.png" alt="Redux" title="Redux" />
-          <img class="icon" src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
-          <img class="icon" src="./assets/images/jest.png" alt="Jest" title="Jest" />
-          <img class="icon" src="./assets/images/enzyme.png" alt="Enzyme" title="Enzyme" />
-          <img class="icon long" src="./assets/images/storybookjs.png" alt="Storybook" title="Storybook" />
-          <img class="icon" src="./assets/images/cypress.png" alt="Cypress" title="Cypress" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/mysql.png" alt="Mysql" title="Mysql" />
-          <img class="icon" src="./assets/images/mongodb.png" alt="MongoDB" title="MongoDB" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="React">
+            <img src="./assets/images/react.png" alt="React" title="React" />
+          </span>
+          <span class="icon" data-label="Redux">
+            <img src="./assets/images/redux.png" alt="Redux" title="Redux" />
+          </span>
+          <span class="icon" data-label="Typescript">
+            <img src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
+          </span>
+          <span class="icon" data-label="Jest">
+            <img src="./assets/images/jest.png" alt="Jest" title="Jest" />
+          </span>
+          <span class="icon" data-label="Enzyme">
+            <img src="./assets/images/enzyme.png" alt="Enzyme" title="Enzyme" />
+          </span>
+          <span class="icon" data-label="Storybook">
+            <img src="./assets/images/storybookjs.png" alt="Storybook" title="Storybook" />
+          </span>
+          <span class="icon" data-label="Cypress">
+            <img src="./assets/images/cypress.png" alt="Cypress" title="Cypress" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Mysql">
+            <img src="./assets/images/mysql.png" alt="Mysql" title="Mysql" />
+          </span>
+          <span class="icon" data-label="MongoDB">
+            <img src="./assets/images/mongodb.png" alt="MongoDB" title="MongoDB" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
-        <dd>글로벌 SNS기반으로 모두와 함께하는 TODO 리스트 개발중</dd>
+        <dd>회원관리 로직 개발 (MongoDB), 기본 서비스 Nodejs ORM 사용(Mysql)</dd>
+        <dd>AWS beanstalk, S3, RDS, CloudFront</dd>
       </dl>
     </li>
 
     <li>
       <h3><a href="https://weather.ooops.kr" target="_blank">날씨</a></h3>
       <a href="https://github.com/weooops/weather-web" target="_blank">
-        <img class="icon" src="./assets/images/github.svg" alt="깃허브 소스코드 보러가기" title="깃허브 소스코드 보러가기" />
+        <img class="image" src="./assets/images/github.svg" alt="깃허브 소스코드 보러가기" title="깃허브 소스코드 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>오늘 및 이번 주 날씨만을 표시하는 심플한 날씨 웹</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/react.png" alt="React" title="React" />
-          <img class="icon" src="./assets/images/redux.png" alt="Redux" title="Redux" />
-          <img class="icon" src="./assets/images/react-router.png" alt="React Router" title="React Router" />
-          <img class="icon" src="./assets/images/i18next.png" alt="i18next" title="i18next" />
-          <img class="icon" src="./assets/images/yahoo.png" alt="Yahoo API" title="Yahoo API" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/aws-s3.png" alt="AWS S3" title="AWS S3" />
-          <img class="icon" src="./assets/images/aws-cloudfront.png" alt="AWS CloudFront" title="AWS CloudFront" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="React">
+            <img src="./assets/images/react.png" alt="React" title="React" />
+          </span>
+          <span class="icon" data-label="Redux">
+            <img src="./assets/images/redux.png" alt="Redux" title="Redux" />
+          </span>
+          <span class="icon" data-label="React Router">
+            <img src="./assets/images/react-router.png" alt="React Router" title="React Router" />
+          </span>
+          <span class="icon" data-label="i18next">
+            <img src="./assets/images/i18next.png" alt="i18next" title="i18next" />
+          </span>
+          <span class="icon" data-label="Yahoo API">
+            <img src="./assets/images/yahoo.png" alt="Yahoo API" title="Yahoo API" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="AWS S3">
+            <img src="./assets/images/aws-s3.png" alt="AWS S3" title="AWS S3" />
+          </span>
+          <span class="icon" data-label="AWS CloudFront">
+            <img src="./assets/images/aws-cloudfront.png" alt="AWS CloudFront" title="AWS CloudFront" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
-        <dd>오늘 및 이번 주 날씨만을 표시하는 심플한 날씨 웹 개발</dd>
+        <dd>지역찾기 및 현재위치를기 반으로 도시를 설정할 수 있으며 i18next를 이용하여 다국어를 지원</dd>
+        <dd>배경이미지는 계절별, 시간별, 날씨별로 표시되고 해당 사진을 앞에 분류에 맞게 선정하여 일정시간에 따라 사진을 교체</dd>
+        <dd>AWS S3, CloudFront를 이용, HTTPS가 필요한 위치기반 서비스이므로 AWS SSL 인증서 사용</dd>
       </dl>
     </li>
 
     <li>
       <h3>그램 <small>(서비스 종료)</small></h3>
       <a href="https://drive.google.com/open?id=1nUm_xRGHvoRViwH0sZqEpBXOwW6XgOLM" target="_blank">
-        <img class="icon" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" />
+        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" title="구글 드라이브로 이미지 보러가기" style="width:24px" />
       </a>
       <dl>
+        <dt>설명</dt>
+        <dd>인기 있는 여성 쇼핑몰을 카테고리별로 보여주는 웹 서비스</dd>
         <dt>주사용기술</dt>
         <dd class="icon-container">
-          <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-          <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-          <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-          <img class="icon" src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
-          <img class="icon" src="./assets/images/vuejs.png" alt="Vuejs" title="Vuejs" />
-          <img class="icon" src="./assets/images/nuxtjs.png" alt="Nuxtjs" title="Nuxtjs" />
-          <img class="icon" src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
-          <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-          <img class="icon" src="./assets/images/babel.png" alt="Babel" title="Babel" />
-          <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-          <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-          <img class="icon" src="./assets/images/mysql.png" alt="Mysql" title="Mysql" />
-          <img class="icon" src="./assets/images/rwd.png" alt="RWD" title="RWD" />
-          <img class="icon" src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
-          <img class="icon" src="./assets/images/aws-ec2.png" alt="AWS EC2" title="AWS EC2" />
-          <img class="icon" src="./assets/images/aws-rds.png" alt="AWS RDS" title="AWS RDS" />
-          <img class="icon" src="./assets/images/aws-route-53.png" alt="AWS Route53" title="AWS Route53" />
+          <span class="icon" data-label="HTML5">
+            <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+          </span>
+          <span class="icon" data-label="CSS3">
+            <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+          </span>
+          <span class="icon" data-label="Sass">
+            <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+          </span>
+          <span class="icon" data-label="Javascript">
+            <img src="./assets/images/javascript.jpeg" alt="Javascript" title="Javascript" />
+          </span>
+          <span class="icon" data-label="Vuejs">
+            <img src="./assets/images/vuejs.png" alt="Vuejs" title="Vuejs" />
+          </span>
+          <span class="icon" data-label="Nuxtjs">
+            <img src="./assets/images/nuxtjs.png" alt="Nuxtjs" title="Nuxtjs" />
+          </span>
+          <span class="icon" data-label="Webpack">
+            <img src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
+          </span>
+          <span class="icon" data-label="Angular1">
+            <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+          </span>
+          <span class="icon" data-label="Babel">
+            <img src="./assets/images/babel.png" alt="Babel" title="Babel" />
+          </span>
+          <span class="icon" data-label="Gulp">
+            <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+          </span>
+          <span class="icon" data-label="Nodejs">
+            <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+          </span>
+          <span class="icon" data-label="Mysql">
+            <img src="./assets/images/mysql.png" alt="Mysql" title="Mysql" />
+          </span>
+          <span class="icon" data-label="RWD">
+            <img src="./assets/images/rwd.png" alt="RWD" title="RWD" />
+          </span>
+          <span class="icon" data-label="Nginx">
+            <img src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
+          </span>
+          <span class="icon" data-label="AWS EC2">
+            <img src="./assets/images/aws-ec2.png" alt="AWS EC2" title="AWS EC2" />
+          </span>
+          <span class="icon" data-label="AWS RDS">
+            <img src="./assets/images/aws-rds.png" alt="AWS RDS" title="AWS RDS" />
+          </span>
+          <span class="icon" data-label="AWS Route53">
+            <img src="./assets/images/aws-route-53.png" alt="AWS Route53" title="AWS Route53" />
+          </span>
         </dd>
         <dt>프로젝트 수행 역할</dt>
-        <dd>인기 있는 여성 쇼핑몰을 카테고리별로 보여주는 웹 서비스 및 관리자 페이지, 홍보 페이지 개발</dd>
+        <dd>Vue와 Nuxt이용하여 View 구현 (RWD)</dd>
+        <dd>Angular를 이용하여 쇼핑몰 관리페이지 개발</dd>
+        <dd>관리자 계정은 MongoDB를 이용하고 쇼핑몰 데이터는 Mysql을 이용하여 구현</dd>
+        <dd>RESTful API 구현</dd>
+        <dd>Nodejs를 이용하여 관리자 페이지에 등록된 쇼핑몰을 통해 매일 데이터를 업로드(스케쥴링, 크롤링)</dd>
       </dl>
     </li>
   </ul>
+  <br>
 
   <h2>기술</h2>
-  <ul>
+  <ul id="skills">
     <li>
       <h3>프론트엔드</h3>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
-        <img class="icon" src="./assets/images/svg.png" alt="SVG" title="SVG" />
-        <img class="icon" src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
-        <img class="icon" src="./assets/images/sass.png" alt="Sass" title="Sass" />
-        <img class="icon" src="./assets/images/es6.jpg" alt="ES6" title="ES6" />
-        <img class="icon" src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
-        <img class="icon" src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
-        <img class="icon" src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
-        <img class="icon" src="./assets/images/angular2.jpg" alt="Angular2" title="Angular2" />
-        <img class="icon" src="./assets/images/vuejs.png" alt="Vuejs" title="Vuejs" />
-        <img class="icon" src="./assets/images/react.png" alt="React" title="React" />
-        <img class="icon" src="./assets/images/redux.png" alt="Redux" title="Redux" />
-        <img class="icon" src="./assets/images/gsap.png" alt="GSAP" title="GSAP" />
-        <img class="icon" src="./assets/images/i18next.png" alt="i18next" title="i18next" />
-        <img class="icon" src="./assets/images/d3.png" alt="D3" title="D3" />
+        <span class="icon" data-label="HTML5">
+          <img src="./assets/images/html5.png" alt="HTML5" title="HTML5" />
+        </span>
+        <span class="icon" data-label="SVG">
+          <img src="./assets/images/svg.png" alt="SVG" title="SVG" />
+        </span>
+        <span class="icon" data-label="CSS3">
+          <img src="./assets/images/css3.png" alt="CSS3" title="CSS3" />
+        </span>
+        <span class="icon" data-label="Sass">
+          <img src="./assets/images/sass.png" alt="Sass" title="Sass" />
+        </span>
+        <span class="icon" data-label="ES6">
+          <img src="./assets/images/es6.jpg" alt="ES6" title="ES6" />
+        </span>
+        <span class="icon" data-label="jQuery">
+          <img src="./assets/images/jQuery.png" alt="jQuery" title="jQuery" />
+        </span>
+        <span class="icon" data-label="Typescript">
+          <img src="./assets/images/typescript.jpg" alt="Typescript" title="Typescript" />
+        </span>
+        <span class="icon" data-label="Angular1">
+          <img src="./assets/images/angular1.png" alt="Angular1" title="Angular1" />
+        </span>
+        <span class="icon" data-label="Angular2">
+          <img src="./assets/images/angular2.jpg" alt="Angular2" title="Angular2" />
+        </span>
+        <span class="icon" data-label="Vuejs">
+          <img src="./assets/images/vuejs.png" alt="Vuejs" title="Vuejs" />
+        </span>
+        <span class="icon" data-label="React">
+          <img src="./assets/images/react.png" alt="React" title="React" />
+        </span>
+        <span class="icon" data-label="Redux">
+          <img src="./assets/images/redux.png" alt="Redux" title="Redux" />
+        </span>
+        <span class="icon" data-label="GSAP">
+          <img src="./assets/images/gsap.png" alt="GSAP" title="GSAP" />
+        </span>
+        <span class="icon" data-label="i18next">
+          <img src="./assets/images/i18next.png" alt="i18next" title="i18next" />
+        </span>
+        <span class="icon" data-label="D3">
+          <img src="./assets/images/d3.png" alt="D3" title="D3" />
+        </span>
       </div>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
-        <img class="icon" src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
-        <img class="icon" src="./assets/images/babel.png" alt="Babel" title="Babel" />
-        <img class="icon" src="./assets/images/eslint.jpg" alt="ESLint" title="ESLint" />
-        <img class="icon" src="./assets/images/tslint.png" alt="TSLint" title="TSLint" />
+        <span class="icon" data-label="Gulp">
+          <img src="./assets/images/gulp.png" alt="Gulp" title="Gulp" />
+        </span>
+        <span class="icon" data-label="Webpack">
+          <img src="./assets/images/webpack.png" alt="Webpack" title="Webpack" />
+        </span>
+        <span class="icon" data-label="Babel">
+          <img src="./assets/images/babel.png" alt="Babel" title="Babel" />
+        </span>
+        <span class="icon" data-label="ESLint">
+          <img src="./assets/images/eslint.jpg" alt="ESLint" title="ESLint" />
+        </span>
+        <span class="icon" data-label="TSLint">
+          <img src="./assets/images/tslint.png" alt="TSLint" title="TSLint" />
+        </span>
       </div>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/jest.png" alt="Jest" title="Jest" />
-        <img class="icon" src="./assets/images/enzyme.png" alt="Enzyme" title="Enzyme" />
-        <img class="icon" src="./assets/images/storybookjs.png" alt="Storybook" title="Storybook" />
-        <img class="icon" src="./assets/images/cypress.png" alt="Cypress" title="Cypress" />
+        <span class="icon" data-label="Jest">
+          <img src="./assets/images/jest.png" alt="Jest" title="Jest" />
+        </span>
+        <span class="icon" data-label="Enzyme">
+          <img src="./assets/images/enzyme.png" alt="Enzyme" title="Enzyme" />
+        </span>
+        <span class="icon" data-label="Storybook">
+          <img src="./assets/images/storybookjs.png" alt="Storybook" title="Storybook" />
+        </span>
+        <span class="icon" data-label="Cypress">
+          <img src="./assets/images/cypress.png" alt="Cypress" title="Cypress" />
+        </span>
       </div>
     </li>
 
     <li>
       <h3>백엔드</h3>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
-        <img class="icon" src="./assets/images/expressjs.png" alt="Express" title="Express" />
-        <img class="icon" src="./assets/images/python.png" alt="Python" title="Python" />
-        <img class="icon" src="./assets/images/django.png" alt="Django" title="Django" />
-        <img class="icon" src="./assets/images/java.png" alt="Java" title="Java" />
-        <img class="icon" src="./assets/images/spring.png" alt="Spring" title="Spring" />
+        <span class="icon" data-label="Nodejs">
+          <img src="./assets/images/nodejs.png" alt="Nodejs" title="Nodejs" />
+        </span>
+        <span class="icon" data-label="Nodejs">
+          <img src="./assets/images/expressjs.png" alt="Express" title="Express" />
+        </span>
+        <span class="icon" data-label="Python">
+          <img src="./assets/images/python.png" alt="Python" title="Python" />
+        </span>
+        <span class="icon" data-label="Django">
+          <img src="./assets/images/django.png" alt="Django" title="Django" />
+        </span>
+        <span class="icon" data-label="Java">
+          <img src="./assets/images/java.png" alt="Java" title="Java" />
+        </span>
+        <span class="icon" data-label="Spring">
+          <img src="./assets/images/spring.png" alt="Spring" title="Spring" />
+        </span>
       </div>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/mocha.png" alt="Mocha" title="Mocha" />
-        <img class="icon" src="./assets/images/chaijs.jpg" alt="Chai" title="Chai" />
+        <span class="icon" data-label="Mocha">
+          <img src="./assets/images/mocha.png" alt="Mocha" title="Mocha" />
+        </span>
+        <span class="icon" data-label="Chai">
+          <img src="./assets/images/chaijs.jpg" alt="Chai" title="Chai" />
+        </span>
       </div>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
+        <span class="icon" data-label="Nginx">
+          <img src="./assets/images/nginx.png" alt="Nginx" title="Nginx" />
+        </span>
       </div>
     </li>
 
     <li>
       <h3>데이터베이스</h3>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/mysql.png" alt="Mysql" title="Mysql" />
-        <img class="icon" src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
-        <img class="icon" src="./assets/images/mongodb.png" alt="MongoDB" title="MongoDB" />
+        <span class="icon" data-label="Mysql">
+          <img src="./assets/images/mysql.png" alt="Mysql" title="Mysql" />
+        </span>
+        <span class="icon" data-label="Oracle">
+          <img src="./assets/images/oracle.png" alt="Oracle" title="Oracle" />
+        </span>
+        <span class="icon" data-label="MongoDB">
+          <img src="./assets/images/mongodb.png" alt="MongoDB" title="MongoDB" />
+        </span>
       </div>
     </li>
 
     <li>
       <h3>디자인</h3>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/photoshop.jpg" alt="Photoshop" title="Photoshop" />
-        <img class="icon" src="./assets/images/sketch.jpg" alt="Sketch" title="Sketch" />
-        <img class="icon" src="./assets/images/zeplin.jpg" alt="Zeplin" title="Zeplin" />
-        <img class="icon" src="./assets/images/avocode.jpg" alt="Avocode" title="Avocode" />
+        <span class="icon" data-label="Photoshop">
+          <img src="./assets/images/photoshop.jpg" alt="Photoshop" title="Photoshop" />
+        </span>
+        <span class="icon" data-label="Sketch">
+          <img src="./assets/images/sketch.jpg" alt="Sketch" title="Sketch" />
+        </span>
+        <span class="icon" data-label="Zeplin">
+          <img src="./assets/images/zeplin.jpg" alt="Zeplin" title="Zeplin" />
+        </span>
+        <span class="icon" data-label="Avocode">
+          <img src="./assets/images/avocode.jpg" alt="Avocode" title="Avocode" />
+        </span>
       </div>
     </li>
 
     <li>
       <h3>기타</h3>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/git.png" alt="Git" title="Git" />
-        <img class="icon" src="./assets/images/github.svg" alt="Github" title="Github" />
-        <img class="icon" src="./assets/images/trello.png" alt="Trello" title="Trello" />
-        <img class="icon" src="./assets/images/slack.png" alt="Slack" title="Slack" />
+        <span class="icon" data-label="Git">
+          <img src="./assets/images/git.png" alt="Git" title="Git" />
+        </span>
+        <span class="icon" data-label="Github">
+          <img src="./assets/images/github.svg" alt="Github" title="Github" />
+        </span>
+        <span class="icon" data-label="Trello">
+          <img src="./assets/images/trello.png" alt="Trello" title="Trello" />
+        </span>
+        <span class="icon" data-label="Slack">
+          <img src="./assets/images/slack.png" alt="Slack" title="Slack" />
+        </span>
       </div>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/aws-route-53.png" alt="AWS Route53" title="AWS Route53" />
-        <img class="icon" src="./assets/images/aws-cloudfront.png" alt="AWS CloudFront" title="AWS CloudFront" />
-        <img class="icon" src="./assets/images/aws-s3.png" alt="AWS S3" title="AWS S3" />
-        <img class="icon" src="./assets/images/aws-ec2.png" alt="AWS EC2" title="AWS EC2" />
-        <img class="icon" src="./assets/images/aws-rds.png" alt="AWS RDS" title="AWS RDS" />
-        <img class="icon" src="./assets/images/azure.png" alt="Azure" title="Azure" />
+        <span class="icon" data-label="AWS Route53">
+          <img src="./assets/images/aws-route-53.png" alt="AWS Route53" title="AWS Route53" />
+        </span>
+        <span class="icon" data-label="AWS CloudFront">
+          <img src="./assets/images/aws-cloudfront.png" alt="AWS CloudFront" title="AWS CloudFront" />
+        </span>
+        <span class="icon" data-label="AWS S3">
+          <img src="./assets/images/aws-s3.png" alt="AWS S3" title="AWS S3" />
+        </span>
+        <span class="icon" data-label="AWS EC2">
+          <img src="./assets/images/aws-ec2.png" alt="AWS EC2" title="AWS EC2" />
+        </span>
+        <span class="icon" data-label="AWS RDS">
+          <img src="./assets/images/aws-rds.png" alt="AWS RDS" title="AWS RDS" />
+        </span>
+        <span class="icon" data-label="Azure">
+          <img src="./assets/images/azure.png" alt="Azure" title="Azure" />
+        </span>
       </div>
       <div class="icon-container big">
-        <img class="icon" src="./assets/images/visual-studio-code.png" alt="Visual Studio Code" title="Visual Studio Code" />
-        <img class="icon" src="./assets/images/sublime-text.png" alt="Sublime Text" title="Sublime Text" />
+        <span class="icon" data-label="Visual Studio Code">
+          <img src="./assets/images/visual-studio-code.png" alt="Visual Studio Code" title="Visual Studio Code" />
+        </span>
+        <span class="icon" data-label="Sublime Text">
+          <img src="./assets/images/sublime-text.png" alt="Sublime Text" title="Sublime Text" />
+        </span>
       </div>
     </li>
   </ul>
