@@ -1,1121 +1,1145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JakeJoo | FrontEnd Developer</title>
-  <meta name="description" content="JakeJoo | FrontEnd Developer"/>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jake Joo | FrontEnd Developer</title>
+    <meta name="description" content="Jake Joo | FrontEnd Developer" />
 
-  <link rel="stylesheet" href="normalize.css">
-  <style>
-    html, body {
-      font-family: sans-serif;
-    }
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    body {
-      background-color: #2a2e39;
-    }
+  <body>
+    <div class="container">
+      <div>
+        <h1>주근재, Jake Joo <br /><small>FrontEnd Developer</small></h1>
+        <p style="line-height: 26px">
+          언젠가는 목적지에 도달하겠지 하는 마음으로 걸어간다면 그것만으로는
+          충분하지 않다.<br />
+          그 한 걸음 한 걸음이 바로 도달하려는 곳이고, 그 한 걸음 다운 가치가
+          있어야 한다.
+        </p>
+        <small>- 괴테</small>
+        <br /><br />
+        <div class="social-container icon-container">
+          <a href="mailto:joogeunjae@gmail.com">
+            <img
+              class="social-icon"
+              src="./assets/images/gmail.png"
+              alt="지메일"
+              style="width: 40px; padding: 2px"
+            />
+          </a>
+          <a href="https://github.com/gjjoo" target="_blank">
+            <img
+              class="social-icon"
+              src="./assets/images/github.svg"
+              alt="깃허브"
+              style="width: 44px"
+            />
+          </a>
+          <a href="https://www.facebook.com/joogeunjae" target="_blank">
+            <img
+              class="social-icon"
+              src="./assets/images/facebook.svg"
+              alt="페이스북"
+              style="width: 44px"
+            />
+          </a>
+          <a href="https://instagram.com/jake.joooo" target="_blank">
+            <img
+              class="social-icon"
+              src="./assets/images/instagram.png"
+              alt="인스타그램"
+              style="width: 34px; padding: 5px"
+            />
+          </a>
+        </div>
+      </div>
+      <br /><br />
 
-    h1 {
-      font-size: 2.4em;
-    }
+      <h2><span class="emoticon">🙋🏻‍♂️</span> About Me</h2>
+      <p style="line-height: 20px">
+        하나의 서비스를 만드는데 관심이 많고 선호합니다.
+        <span class="emoticon-small">😍</span> <br />
+        그래서 하나의 기술을 깊이 있게 파고드는 것 보다는 고루고루 보는 편이고,
+        직접 만들기 보다는 훌륭한 라이브러리를 찾아 잘 사용하는 편입니다. <br />
+        (프론트엔드 개발자라고 불리기 보다는 개발 크리에이터 라고 불려지고
+        싶네요.) <br /><br />
+        하지만 필요한 기능이 부족하거나 없는 경우 해결하기 위해 끈기 있게 달라
+        붙습니다. <br />
+        주로 사용하는 쪽이지만 속도와 디자인 그리고 디테일에 매우 민감하여
+        까다로운 편입니다. <span class="emoticon-small">🧐</span> <br />
+        <!-- (한 가지 예로, Flutter의 iOS, AOS 동시 개발, 네이티브스러운 성능 그리고
+        생산성에 반했지만, 깊이 들어갈 수록 디테일과 성능에 실망을 느끼는
+        중입니다. <span class="emoticon-small">😥</span>)
+        <br />
+        기획과 디자인에 참여하는걸 좋아합니다.
+        <br /> -->
+        <br />
+        최근 Flutter와 Swift, Kotlin에 빠져 모바일 앱 개발 공부 및 간단한 개인
+        서비스 준비중에 있습니다. <span class="emoticon-small">🏃🏻‍♂️</span>
+      </p>
+      <br />
 
-    h2 {
-      font-size: 1.4em;
-    }
+      <h2><span class="emoticon">💼</span> Work Experience</h2>
+      <ul id="experience">
+        <li>
+          <h3>
+            트레블어스, 웹 프론트엔드 개발자
+            <small>19.08 ~ 20.03 (서비스종료)</small>
+          </h3>
+          <p>
+            여행 동행 <br />
+            트레블리 PC/Mobile 웹 서비스 개발
+          </p>
+        </li>
 
-    h3, h4 {
-      display: inline;
-    }
+        <li>
+          <h3>
+            번개장터, 웹 프론트엔드 개발자
+            <small>18.03 ~ 19.05</small>
+          </h3>
+          <p>
+            중고 거래 <br />
+            번개장터 PC/Mobile 웹 서비스 개발, 신한카드 전용 중고거래 모바일웹
+            개발, 광고주를 위한 광고센터 페이지 일부 리뉴얼
+          </p>
+        </li>
 
-    hr {
-      border-style: dashed;
-      border-color: gray;
-    }
+        <li>
+          <h3>
+            바풀, 웹 개발자
+            <small>16.02 ~ 17.09 (서비스종료)</small>
+          </h3>
+          <p>
+            수학 교육 <br />
+            바풀에서 제공하는 전체 웹 페이지 개발 및 유지보수 담당<br />바로풀기,
+            강의실 서비스 개발 / 모든 서비스에 대한 관리자 페이지 개발 및 관리 /
+            이벤트 및 프로모션 페이지 제작 / 결제 서비스에 대한 웹 페이지 개발
+          </p>
+        </li>
 
-    img {
-      vertical-align: bottom;
-    }
+        <li>
+          <h3>칸테크, 웹 개발자 <small>13.01 ~ 15.05</small></h3>
+          <p>
+            성과 평가 <br />
+            대학교 평가시스템 개발 및 유지보수. BI, ERP, 빅데이터 등을 이용하여
+            학교 및 기업 솔루션 개발
+          </p>
+        </li>
+      </ul>
+      <br />
 
-    p {
-      margin-top: 0;
-      font-size: 14px;
-    }
+      <h2><span class="emoticon">🚗</span> Projects</h2>
+      <ul id="projects">
+        <li>
+          <h3>트레블어스</h3>
+          <ul>
+            <li>
+              <h3>
+                <a href="https://onbyeol.com/" target="_blank">트레블리</a>
+                <a
+                  href="https://drive.google.com/drive/folders/14-3GuKkgmp1o1g11dD3o1NMyrHDVsJgE?usp=sharing"
+                  target="_blank"
+                >
+                  <img
+                    class="image"
+                    src="./assets/images/google-drive.svg"
+                    alt="구글 드라이브로 이미지 보러가기"
+                    style="width: 24px"
+                  />
+                </a>
+              </h3>
+              <dl>
+                <dt>설명</dt>
+                <dd>여행 동행 서비스</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  PC, Mobile 웹 서비스 개발 <br />
+                  프론트엔드 프로젝트 코드 베이스 및 AWS 설계
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  React, Redux, Typescript, Style-Components, Storybook, <br />
+                  Google Maps API, PWA, Sentry, Sendbird, FullStroy,
+                  ChannelTalk,
+                  <br />
+                  AWS Route53, Cloudfront, S3, Lambda, Lambda@Edge for SEO,
+                  Rekognition
+                </dd>
+                <dt>주요기능</dt>
+                <dd>
+                  계정관리, 여권 인식, 동행 방, 그룹 및 개인 채팅, 지역 가이드,
+                  만남의 장소 안내
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </li>
 
-    li {
-      margin-top: 20px;
-    }
+        <li>
+          <h3>번개장터</h3>
+          <ul>
+            <li>
+              <h3>
+                <a href="https://m.bunjang.co.kr/" target="_blank">
+                  번개장터 PC
+                </a>
+              </h3>
+              <dl>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  python, django, jQuery로 운영되던 기존 웹을 SPA방식으로 신규
+                  개발 및 디자인 리뉴얼
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>Vuejs, Scss, Storybook, Python, Django</dd>
+              </dl>
+            </li>
 
-    dl {
-      margin: 0;
-    }
+            <li>
+              <h3>
+                <a href="https://m.bunjang.co.kr/" target="_blank">
+                  번개장터 Mobile
+                </a>
+              </h3>
+              <dl>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  기존에 없었던 모바일 버전을 처음부터 새롭게 개발 및 유지보수
+                  <br />
+                  프론트엔드 프로젝트 코드 베이스 설계
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  React, Redux, Typescript, Style-Components, Storybook, <br />
+                  Nextjs, Nodejs, Express
+                </dd>
+              </dl>
+            </li>
 
-    dt, dd {
-      font-size: 14px;
-    }
+            <li>
+              <h3>번개장터 광고센터</h3>
+              <dl>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>주요 페이지 React기반으로 변경 및 리디자인</dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  React, Redux, Typescript, Style-Components, Storybook, D3,
+                  <br />
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </li>
 
-    dt {
-      margin-top: 4px;
-    }
+        <li>
+          <h3>바풀</h3>
+          <ul>
+            <li>
+              <h3>강의실</h3>
+              <a
+                href="https://drive.google.com/open?id=1pe2qO-JbApc8TqWaIjq6g7Kcd56yrowH"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>중, 고등학교 수학전문 문제학습 및 인강 서비스</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  수학문제, 개념동영상을 학년별 영역별을 연계시켜 수학을
+                  체계적으로 공부할수 있는 웹사이트 개발
+                </dd>
+                <dd>
+                  강의동영상시청,문제풀이,진도평가,학습현황 페이지 데스크탑 및
+                  모바일용으로 각각 개발
+                </dd>
+                <dd>자체 회원 로그인/회원가입 및 소셜 로그인 서비스 구현</dd>
+                <dd>
+                  강의실 지도, 각 학습 데이터를 활용한 현황 차트 개발 (D3.js)
+                </dd>
+                <dd>자체 웹 서버에서 Math 데이터를 SVG 데이터로 변환 작업</dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Sass, D3, Angular2, Typescript, Nodejs, Webpack,
+                  AngularCli, PWA, Mobile, Desktop, Azure
+                </dd>
+              </dl>
+            </li>
 
-    dd {
-      margin-bottom: 2px;
-    }
+            <li>
+              <h3>강의실 결제</h3>
+              <a
+                href="https://drive.google.com/open?id=1ww0zAOeZH5oB6NIR7SkoEySvp-NbfbGs"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>강의실만을 전용으로 한 웹결제 시스템</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>강의실 전용 결제 페이지 개발</dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Sass, Angular2, Typescript, Nodejs, Webpack,
+                  AngularCli, Mobile, Azure
+                </dd>
+              </dl>
+            </li>
 
-    a {
-      display: inline-block;
-    }
+            <li>
+              <h3>바풀공부방 소개</h3>
+              <a
+                href="https://drive.google.com/open?id=1Jk4jYvZEUF17ry0x-rdSHnUSV7UW4rZU"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>
+                  1:1 학생과 선생님을 매칭시켜 스마트 과외를 제공하는
+                  바풀공부방을 소개하는 페이지
+                </dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  홍보용 렌딩 페이지, 공부방 서비스에 대한 고객센터 페이지 개발
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Javascript, Angular1, Python, Django, RWD, Azure
+                </dd>
+              </dl>
+            </li>
 
-    .container {
-      position: relative;
-      margin: 5% 10%;
-      padding: 60px 40px;
-      background-color: #fefefe;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    @media (max-width: 480px) {
-      .container {
-        margin: 10px;
-        padding: 20px;
+            <li>
+              <h3>바풀공부방 동영상 홍보</h3>
+              <a
+                href="https://drive.google.com/open?id=17tDOhaIYoATUDya0sb20mSn1DfXxlwAj"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>
+                  유료서비스인 바풀공부방의 일부 기능을 간접적으로 체험할 수
+                  있는 페이지
+                </dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  유료앱인 바풀공부방을 간접적으로 체험할 수 있도록 몇몇
+                  선생님들의 답변과 동영상을 웹으로 제공할 수 있도록 개발
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, SVG, Javascript, Angular1, Python, Django,
+                  Firebase, Mobile, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바풀공부방 관리자</h3>
+              <a
+                href="https://drive.google.com/open?id=1GsgzXIeSfb8iO-7Y35K5sKy1Wm7ao_cV"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>바풀공부방의 모든것을 관리하는 페이지</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>바풀공부방 관리자 페이지 개발 (바풀 스타터 키트 사용)</dd>
+                <dd>
+                  회원 및 선생님 관리, 선생님 심사, 수업 관리, 결제 관리,
+                  프로모션 및 이벤트 관리, 앱 팝업 및 배너 관리 등 효과적으로
+                  바풀공부방을 관리할 수 있는 페이지
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Sass, Javascript, Angular1, Nodejs, Gulp, Babel,
+                  RWD, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바로단어장 관리자</h3>
+              <dl>
+                <dt>설명</dt>
+                <dd>
+                  사진을 찍어 영어단어장으로 만들어주는 바로단어장의 관리자
+                  페이지
+                </dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  (바풀 스타터 키트를 사용)하여 개발: 사진을 인식해 단어장으로
+                  만들어주는 서비스로 관리자 기능은 팝업 및 배너 관리만 사용
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Sass, Javascript, Angular1, Nodejs, Gulp, Babel,
+                  RWD, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바풀 프로모션</h3>
+              <a
+                href="https://drive.google.com/open?id=1dIrIcKXdpNTGKBRrIdM-YzQki2t3r6NF"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>
+                  프로모션 및 이벤트 페이지를 별도 도메인으로 따로 운영하여
+                  관리하기 위한 목적으로 사용
+                </dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  바풀에서 제공하는 모든 서비스에 대한 프로모션 페이지 개발
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, ES6, Vuejs, Webpack, Nodejs, Pug, Mobile, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바로풀기 관리자</h3>
+              <a
+                href="https://drive.google.com/open?id=1Tx7ZS8CK35J1zOTpxkdp1EIWqtMmKeZD"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>바로풀기 서비스의 모든것을 관리하는 페이지</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  바로풀기 관리용 페이지 개발: 각종 신고, 베스트글, 회원,
+                  선생님, 질문 및 그룹, 정적 이미지 생성, 푸쉬 등을 관리
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Less, Coffeescript, Angular1, Python, Django, RWD,
+                  Nginx, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바로풀기</h3>
+              <a
+                href="https://drive.google.com/open?id=1cc1QA1_drfnB-eXLzWslc6S8iiYiMay5"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>
+                  사진을 기반으로 질문과 답변을 이용할 수 있는 수학전문 서비스
+                </dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  바풀 핵심 어플 바로풀기 웹 서비스 개발: 주요 기능으로 사진기반
+                  질문과 답변, 회원 정보, 이야기 게시판, 이벤트 및 공지사항
+                  채널, 그룹 페이지 제공
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Less, Coffeescript, Angular1, Python, Django, RWD,
+                  Nginx, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바풀 관리자</h3>
+              <dl>
+                <dt>설명</dt>
+                <dd>회사 내부 관리용 페이지</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  사내 관리용 페이지 개발(Bapul Starter Kit 사용): 계정관리 및
+                  각종 이벤트 처리. 특히 구글 프로그램과 연동하여 수치 계산
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Sass, Javascript, Angular1, Nodejs, Gulp, Babel,
+                  MongoDB, Google API, RWD, Nginx, Azure
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바풀 회사 소개 홈페이지</h3>
+              <a
+                href="https://drive.google.com/open?id=11wWUtEvuHNGhX8Rv2uHgJ7_97OsmQ-2Q"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>바풀 서비스 및 회사 홍보용 페이지</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  바풀에서 제공하는 서비스 홍보 및 회사 소개 홈페이지 개발
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>HTML, CSS, Javascript, jQuery, Nodejs, Gulp, RWD, Azure</dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>바풀 스타터 키트</h3>
+              <a
+                href="https://github.com/OpenBapul/bapul-starter-kit"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/github.svg"
+                  alt="깃허브 소스코드 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <a
+                href="https://drive.google.com/open?id=158RKo6_W7-b0GKDNM3DW_b2GnUYCAHWR"
+                target="_blank"
+              >
+                <img
+                  class="image"
+                  src="./assets/images/google-drive.svg"
+                  alt="구글 드라이브로 이미지 보러가기"
+                  style="width: 24px"
+                />
+              </a>
+              <dl>
+                <dt>설명</dt>
+                <dd>사내 관리자용 웹 스타터 키트</dd>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>
+                  Bootstrap, Meterial을 활용하여 바풀만의 빠른 웹 개발을 위한
+                  CSS 라이브러리 프로젝트 개발
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, Sass, Javascript, Angular1, Nodejs, Gulp, Babel,
+                  RWD
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>칸테크</h3>
+          <ul>
+            <li>
+              <h3>
+                동국대, 영남대, 한양대, 서울대, 서울여대 교/직원 내부 시스템
+              </h3>
+              <dl>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>평가 솔루션 개발 및 유지보수, 차트 및 그리드 도입</dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, jQuery, JSP, Java, Spring, Hibernate, iBatis,
+                  Oracle, Oracle PL/SQL, Apache, Tomcat
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>칸테크 대외평가, 교육원가, 경영계획 시스템</h3>
+              <dl>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>평가 솔루션 개발 및 유지보수, 차트 및 그리드 도입</dd>
+                <dd>HightCharts, AmCharts를 이용하여 데이터 시각화 구현</dd>
+                <dd>Axisj 라이브러리를 이용하여 그리드 구현</dd>
+                <dd>
+                  오라클 프로시져, 패키지를 이용하여 평가시스템 데이터 맞춤 개발
+                </dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, jQuery, JSP, Java, Spring, Hibernate, Mybatis,
+                  AmChart, Hicharts, Axisj, Oracle, Desktop, Apache, Tomcat
+                </dd>
+              </dl>
+            </li>
+
+            <li>
+              <h3>칸테크 프로젝트관리 시스템</h3>
+              <dl>
+                <dt>프로젝트 수행 역할</dt>
+                <dd>Redmine을 Custom하여 화면을 회사에 맞게 재구현</dd>
+                <dt>주사용기술</dt>
+                <dd>
+                  HTML, CSS, jQuery, JSP, Java, Spring, Hibernate, Mybatis,
+                  Redmine, Oracle, Desktop, Apache, Tomcat
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <br />
+
+      <h2><span class="emoticon">🚀</span> Side Projects</h2>
+      <ul id="side-projects">
+        <li>
+          <h3>하이그라운드 <small>(진행중)</small></h3>
+          <dl>
+            <dt>설명</dt>
+            <dd>트레킹, 등산, 산책, 달리기, 하이킹 코스 정보 제공, GPX 기록</dd>
+            <dt>프로젝트 수행 역할</dt>
+            <dd>
+              AWS 서버 아키텍처 구성 <br />
+              서비스용 Graphql 기반 서버 개발 <br />
+              기록용 서버리스 REST API 개발<br />
+              Web과 iOS 개발 <br />
+              기획 / 디자인
+            </dd>
+            <dt>주사용기술 (계획단계)</dt>
+            <dd>
+              HTML, CSS, Typescript, React, Styled-Components, Apollo, i18next
+              <br />
+              Nodejs, Graphql, Apollo-Server, Nestjs, Prisma <br />
+              AWS Route53, Cloudfront, S3 <br />
+              AWS ECS, Fargate, RDS (for user service) <br />
+              AWS Cognito, API Gateway, Lambda, Dynamodb (recorder for admin) <br/>
+              AWS SES, SNS <br />
+              AWS CodeCommit CodeBuild, CodePipeline, CodeDeploy <br />
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <h3>
+            <a href="https://hillyheally.com" target="_blank"> 힐리힐리 </a>
+            <small>(서비스 중단)</small>
+            <a
+              href="https://drive.google.com/drive/folders/1HMIlbzRKZrzv3aVRc5vOKoKwaFvAo6cL?usp=sharing"
+              target="_blank"
+            >
+              <img
+                class="image"
+                src="./assets/images/google-drive.svg"
+                alt="구글 드라이브로 이미지 보러가기"
+                style="width: 24px"
+              />
+            </a>
+          </h3>
+          <dl>
+            <dt>설명</dt>
+            <dd>전 세계 대회 리스트 게시 및 알림, 러너 SNS</dd>
+            <dt>프로젝트 수행 역할</dt>
+            <dd>
+              AWS 서버 아키텍처 구성 <br />
+              Graphql 기반 서버 개발 <br />
+              Mobile Web Front 개발 <br />
+              기획 / 디자인
+            </dd>
+            <dt>주사용기술</dt>
+            <dd>
+              HTML, CSS, Typescript, React, Styled-Components, Apollo, i18next
+              <br />
+              Nodejs, Graphql, Apollo-Server, Nexus, Prisma <br />
+              AWS Route53, Cloudfront, S3 <br />
+              AWS Beanstalk, RDS <br />
+              AWS SES, SNS <br />
+              AWS CodeBuild, CodePipeline <br />
+              Jira, Bitbucket
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <h3>
+            <a href="https://weather.ooops.kr" target="_blank">날씨</a>
+            <small>(서비스 종료)</small>
+          </h3>
+          <a href="https://github.com/weooops/weather-web" target="_blank">
+            <img
+              class="image"
+              src="./assets/images/github.svg"
+              alt="깃허브 소스코드 보러가기"
+              style="width: 24px"
+            />
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1Mr0PXnkYAEh3x-Zko2sddPtwdNEUwCCM?usp=sharing"
+            target="_blank"
+          >
+            <img
+              class="image"
+              src="./assets/images/google-drive.svg"
+              alt="구글 드라이브로 이미지 보러가기"
+              style="width: 24px"
+            />
+          </a>
+
+          <dl>
+            <dt>설명</dt>
+            <dd>오늘 및 이번 주 날씨만을 표시하는 심플한 날씨 웹</dd>
+            <dt>프로젝트 수행 역할</dt>
+            <dd>
+              지역찾기 및 현재위치를기 반으로 도시를 설정할 수 있으며 i18next를
+              이용하여 다국어를 지원
+            </dd>
+            <dd>
+              배경이미지는 계절별, 시간별, 날씨별로 표시되고 해당 사진을 앞에
+              분류에 맞게 선정하여 일정시간에 따라 사진을 교체
+            </dd>
+            <dt>주사용기술</dt>
+            <dd>
+              HTML, CSS, React, Redux, React-Router, i18next, Yahoo API, RWD,
+              AWS CloudFront, S3, SSL
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <h3>
+            <a href="https://todo.ooops.kr" target="_blank">할 일</a>
+            <small>(서비스 종료)</small>
+          </h3>
+          <dl>
+            <dt>설명</dt>
+            <dd>글로벌 SNS기반으로 모두와 함께하는 TODO 리스트</dd>
+            <dt>프로젝트 수행 역할</dt>
+            <dd>
+              회원관리 로직 개발 (MongoDB), 기본 서비스 Nodejs ORM 사용(Mysql)
+            </dd>
+            <dt>주사용기술</dt>
+            <dd>
+              HTML, CSS, React, Redux, Typescript, Jest, Enzyme, Storybook,
+              <br />
+              Cypress, Nodejs, Mysql, MongoDB, RWD, <br />
+              AWS beanstalk, S3, RDS, CloudFront
+            </dd>
+          </dl>
+        </li>
+
+        <li>
+          <h3>
+            <a href="https://mixtore.kr" target="_blank">그램</a>
+            <small>(서비스 종료)</small>
+          </h3>
+          <a
+            href="https://drive.google.com/open?id=1nUm_xRGHvoRViwH0sZqEpBXOwW6XgOLM"
+            target="_blank"
+          >
+            <img
+              class="image"
+              src="./assets/images/google-drive.svg"
+              alt="구글 드라이브로 이미지 보러가기"
+              style="width: 24px"
+            />
+          </a>
+          <dl>
+            <dt>설명</dt>
+            <dd>인기 있는 여성 쇼핑몰을 카테고리별로 보여주는 웹 서비스</dd>
+            <dt>프로젝트 수행 역할</dt>
+            <dd>Vue와 Nuxt이용하여 View 구현 (RWD)</dd>
+            <dd>Angular를 이용하여 쇼핑몰 관리페이지 개발</dd>
+            <dd>
+              관리자 계정은 MongoDB를 이용하고 쇼핑몰 데이터는 Mysql을 이용하여
+              구현
+            </dd>
+            <dd>RESTful API 구현</dd>
+            <dd>
+              Nodejs를 이용하여 관리자 페이지에 등록된 쇼핑몰을 통해 매일
+              데이터를 업로드(스케쥴링, 크롤링)
+            </dd>
+            <dt>주사용기술</dt>
+            <dd>
+              HTML, CSS, Sass, Javascript, Vuejs, Nuxtjs, Webpack, Angular1,
+              Babel, Gulp, Nodejs, Mysql, RWD, Nginx, AWS EC2, AWS RDS, AWS
+              Route53, AWS S3, AWS Cloudfront
+            </dd>
+          </dl>
+        </li>
+      </ul>
+      <br />
+
+      <h2><span class="emoticon">👨🏻‍💻</span> Studying</h2>
+      <h4>Using Flutter</h4>
+      <ul class="studying">
+        <li>
+          <strong>Rezero</strong>
+          <div class="preview">
+            <img
+              src="./assets/videos/Rezero.png"
+              alt="Re:zero"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('Rezero', 'RezeroStack', 'Rezero', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="Rezero" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/Rezero.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="RezeroStack" data-new-window style="display: none">
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>sliding_up_panel</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <strong>Blackyak</strong>
+          <div class="preview">
+            <img
+              src="./assets/videos/Blackyak.png"
+              alt="Blackyak"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('Blackyak', 'BlackyakStack', 'Blackyak', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="Blackyak" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/Blackyak.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="BlackyakStack" data-new-window style="display: none">
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>animations</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <strong>HeyPet</strong>
+          <div class="preview">
+            <img
+              src="./assets/videos/HeyPet.png"
+              alt="HeyPet"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('HeyPet', 'HeyPetStack', 'HeyPet', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="HeyPet" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/HeyPet.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="HeyPetStack" data-new-window style="display: none">
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>get</li>
+              <li>intl</li>
+              <li>jiffy</li>
+              <li>smooth_page_indicator</li>
+              <li>dotted_border</li>
+              <li>persistent_bottom_nav_bar</li>
+              <li>cached_network_image</li>
+              <li>video_player</li>
+              <li>flutter_slidable</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <strong>KakaoPage</strong>
+          <div class="preview">
+            <img
+              src="./assets/videos/KakaoPage.png"
+              alt="KakaoPage"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('KakaoPage', 'KakaoPageStack', 'KakaoPage', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="KakaoPage" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/KakaoPage.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="KakaoPageStack" data-new-window style="display: none">
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>get</li>
+              <li>intl</li>
+              <li>jiffy</li>
+              <li>flutter_svg</li>
+              <li>carousel_slider</li>
+              <li>path_provider</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <strong>YouTube</strong>
+          <div class="preview">
+            <img
+              src="./assets/videos/YouTube.png"
+              alt="YouTube"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('YouTube', 'YouTubeStack', 'YouTube', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="YouTube" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/YouTube.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="YouTubeStack" data-new-window style="display: none">
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>get</li>
+              <li>animations</li>
+              <li>modal_bottom_sheet</li>
+              <li>intl</li>
+              <li>jiffy</li>
+              <li>youtube_player_flutter</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <strong>Instagram</strong>
+          <div class="preview">
+            <img
+              src="./assets/videos/Instagram.png"
+              alt="Instagram"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('Instagram', 'InstagramStack', 'Instagram', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="Instagram" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/Instagram.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="InstagramStack" data-new-window style="display: none">
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>cached_network_image</li>
+              <li>flutter_svg</li>
+              <li>intl</li>
+              <li>timeago</li>
+              <li>get</li>
+              <li>animations</li>
+              <li>image_picker</li>
+              <li>video_player</li>
+              <li>modal_bottom_sheet</li>
+              <li>visibility_detector</li>
+              <li>flare_flutter</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <br />
+
+      <h4>Using Swift</h4>
+      <ul class="studying">
+        <li>
+          <a href="https://apps.apple.com/kr/app/sgi-%EC%96%B4%EC%84%9C/id1538590869" target="_blank"><strong>SGI 어서</strong></a>
+          <div class="preview">
+            <img
+              src="./assets/videos/SgiGosho.png"
+              alt="SgiGosho"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('SgiGosho', 'SgiGoshoStack', 'SgiGosho', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="SgiGosho" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/SgiGosho.mov" type="video/mp4" />
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="SgiGoshoStack" data-new-window style="display: none">
+            <h3>설명</h3>
+            <p style="padding-left: 20px;">불교 종교 서적 앱</p>
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>UIKit</li>
+              <li>FlexLayout</li>
+              <li>PinLayout</li>
+              <li>SnapKit</li>
+              <li>AVKit</li>
+              <li>AVFoundation</li>
+              <li>WebKit</li>
+              <li>Firebase</li>
+              <li>GoogleMobileAds</li>
+              <li>CoreData</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="https://apps.apple.com/kr/app/sgi-%EA%B8%B0%EC%9B%90/id1541692852" target="_blank"><strong>SGI 기원</strong></a>
+          <div class="preview">
+            <img
+              src="./assets/videos/SgiPray.png"
+              alt="SgiPray"
+              style="width: 187.5px; height: 333.5px"
+            />
+          </div>
+          <button
+            onclick="open_in_new_window('SgiPray', 'SgiPrayStack', 'SgiPray', 'location=1,status=1,toolbar=1,scrollbars=1,resizeable=1,width=641,height=706');"
+          >
+            <img src="./assets/icons/play.svg" alt="play" />
+          </button>
+          <div id="SgiPray" data-new-window style="display: none">
+            <video controls style="width: 100%; height: auto">
+              <source src="./assets/videos/SgiPray.mov" type="video/mp4">
+              <strong>Your browser does not support the video tag.</strong>
+            </video>
+          </div>
+          <div id="SgiPrayStack" data-new-window style="display: none">
+            <h3>설명</h3>
+            <p style="padding-left: 20px;">불교 종교 기원 관리 앱</p>
+            <h3>주 사용 기술</h3>
+            <ul>
+              <li>SwiftUI</li>
+              <li>UIKit</li>
+              <li>Combine</li>
+              <li>AVFoundation</li>
+              <li>WebKit</li>
+              <li>UserNotifications</li>
+              <li>Firebase</li>
+              <li>GoogleMobileAds</li>
+              <li>CoreData</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      function open_in_new_window(id, stackId, new_page_title, features) {
+        var new_window;
+
+        if (features !== undefined && features !== "") {
+          new_window = window.open("", "_blank", features);
+        } else {
+          new_window = window.open("", "_blank");
+        }
+
+        var html_contents = document.getElementById(id);
+        var html_stacks = document.getElementById(stackId);
+        if (html_contents !== null) {
+          new_window.document.write(`
+            <!doctype html>
+            <html>
+            <head>
+              <title>${new_page_title}</title>
+              <meta charset="utf-8" />
+              <style>
+                html, body {
+                  font-family: sans-serif;
+                }
+                body {
+                  background-color: #292929;
+                  color: #dcdcdc;
+                }
+                video {
+                  border: 1px solid white;
+                }
+              </style>
+            </head>
+            <body>
+              <div style="display:flex;">
+              <div style="width:391px; height:690px; margin-right:20px;">${html_contents.innerHTML}</div>
+              <div style="width:230px; height:690px;">${html_stacks.innerHTML}</div>
+            </body>
+            </html>
+          `);
+        }
       }
-    }
-
-    .social-container {
-      position: absolute;
-      right: 40px;
-      top: 60px;
-      margin-top: 20px;
-    }
-    @media (max-width: 480px) {
-      .social-container {
-        position: static;
-      }
-    }
-
-    .image {
-      border: 1px solid #E6E6E6;
-      border-radius: 50%;
-    }
-
-    .icon {
-      position: relative;
-      display: inline-block;
-      margin-right: 2px;
-      transition: all .2s ease;
-    }
-    .icon-container .icon > img {
-      margin: 2px 0;
-      border: 1px solid #E6E6E6;
-      border-radius: 3px;
-      padding: 4px;
-      width: 26px;
-      background-color: white;
-    }
-    .icon-container .icon:after {
-      content: attr(data-label);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      border-radius: 4px;
-      padding: 2px 0 0 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-      font-size: 10px;
-      color: white;
-      text-align: center;
-    }
-    .icon-container .icon:hover {
-      transform: scale(1.26);
-      z-index: 1;
-    }
-    .icon-container.big .icon:after {
-      border-radius: 6px;
-      padding: 2px 0 1px 0;
-      font-size: 12px;
-    }
-    .icon-container.big .icon > img {
-      width: 48px;
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h1>주근재, JakeJoo <br><small>FrontEnd Developer</small></h1>
-  <p>언젠가는 목적지에 도달하겠지 하는 마음으로 걸어간다면 그것만으로는 충분하지 않다</p>
-  <p>그 한 걸음 한 걸음이 바로 도달하려는 곳이고, 그 한 걸음다운 가치가 있어야 한다</p>
-  <small>- 괴테 -</small>
-  <div class="social-container icon-container">
-    <a href="https://github.com/gjjoo" target="_blank">
-      <span class="icon" data-label="gjjoo">
-        <img class="social-icon" src="./assets/images/github.svg" alt="깃허브" style="width:48px" />
-      </span>
-    </a>
-    <!-- <a href="https://github.com/weooops" target="_blank">
-      <span class="icon" data-label="weooops">
-        <img class="social-icon" src="./assets/images/github.svg" alt="깃허브" style="width:48px" />
-      </span>
-    </a> -->
-    <a href="https://www.facebook.com/joogeunjae" target="_blank">
-      <span class="icon" data-label="facebook">
-        <img class="social-icon" src="./assets/images/facebook.svg" alt="페이스북" style="width:48px" />
-      </span>
-    </a>
-  </div>
-  <br><br>
-
-  <h2>경력사항</h2>
-  <ul id="experience">
-    <li>
-      <h3>(주)번개장터, 프론트엔드 개발자 <small>18.03 ~ 19.05</small></h3>
-      <p>번개장터 PC/Mobile 웹 서비스 개발, 신한카드 전용 중고거래 모바일웹 개발, 광고주를 위한 광고센터 페이지 일부 리뉴얼</p>
-    </li>
-    <li>
-      <h3>(주)바풀, 프론트엔드 개발자 <small>16.02 ~ 17.09 (서비스종료)</small></h3>
-      <p>바풀에서 제공하는 전체 웹 페이지 개발 및 유지보수 담당<br>바로풀기, 강의실 서비스 개발 / 모든 서비스에 대한 관리자 페이지 개발 및 관리 / 이벤트 및 프로모션 페이지 제작 / 결제 서비스에 대한 웹 페이지 개발</p>
-    </li>
-
-    <li>
-      <h3>(주)칸테크, 자바 웹 개발자 <small>13.01 ~ 15.05</small></h3>
-      <p>대학교 평가시스템 개발 및 유지보수. BI, ERP, 빅데이터 등을 이용하여 학교 및 기업 솔 루션 개발</p>
-    </li>
-  </ul>
-  <br>
-
-  <h2>프로젝트</h2>
-  <ul id="projects">
-    <li>
-      <h3><a href="https://m.bunjang.co.kr/">번개장터 PC 웹</a></h3>
-      <dl>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-            Vuejs, Scss, Python, Django, storybook
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>python, django, jQuery로 운영되던 기존 웹을 SPA방식으로 신규 개발 및 디자인 리뉴얼</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3><a href="https://m.bunjang.co.kr/">번개장터 Mobile 웹</a></h3>
-      <dl>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          React, Redux, Typescript, Style-components, Storybook, Nextjs, Nodejs, Express
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>기존에 없었던 모바일 버전을 처음부터 새롭게 개발 및 유지보수</dd>
-      </dl>
-    </li>
-    
-    <li>
-      <h3>바풀 스타터 키트</h3>
-      <a href="https://github.com/OpenBapul/bapul-starter-kit" target="_blank">
-        <img class="image" src="./assets/images/github.svg" alt="깃허브 소스코드 보러가기" style="width:24px" />
-      </a>
-      <a href="https://drive.google.com/open?id=158RKo6_W7-b0GKDNM3DW_b2GnUYCAHWR" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>사내 관리자용 웹 스타터 키트</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          HTML5, CSS3, Sass, Javascript, Angular1, Nodejs, Gulp, Babel, RWD
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>Bootstrap, Meterial을 활용하여 바풀만의 빠른 웹 개발을 위한 CSS 라이브러리 프로젝트 개발</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바풀 회사 소개 홈페이지</h3>
-      <a href="https://drive.google.com/open?id=11wWUtEvuHNGhX8Rv2uHgJ7_97OsmQ-2Q" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>바풀 서비스 및 회사 홍보용 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="jQuery">
-            <img src="./assets/images/jQuery.png" alt="jQuery" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Gulp">
-            <img src="./assets/images/gulp.png" alt="Gulp" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>바풀에서 제공하는 서비스 홍보 및 회사 소개 홈페이지 개발</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바풀 관리자</h3>
-      <dl>
-        <dt>설명</dt>
-        <dd>회사 내부 관리용 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Sass">
-            <img src="./assets/images/sass.png" alt="Sass" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Gulp">
-            <img src="./assets/images/gulp.png" alt="Gulp" />
-          </span>
-          <span class="icon" data-label="Babel">
-            <img src="./assets/images/babel.png" alt="Babel" />
-          </span>
-          <span class="icon" data-label="MongoDB">
-            <img src="./assets/images/mongodb.png" alt="MongoDB" />
-          </span>
-          <span class="icon" data-label="Google API">
-            <img src="./assets/images/google-app-engine.png" alt="Google API" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Nginx">
-            <img src="./assets/images/nginx.png" alt="Nginx" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>사내 관리용 페이지 개발(Bapul Starter Kit 사용): 계정관리 및 각종 이벤트 처리. 특히 구글 프로그램과 연동하여 수치 계산</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바로풀기</h3>
-      <a href="https://drive.google.com/open?id=1cc1QA1_drfnB-eXLzWslc6S8iiYiMay5" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>사진을 기반으로 질문과 답변을 이용할 수 있는 수학전문 서비스</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Less">
-            <img src="./assets/images/less.png" alt="Less" />
-          </span>
-          <span class="icon" data-label="Coffeescript">
-            <img src="./assets/images/coffeescript.png" alt="Coffeescript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Python">
-            <img src="./assets/images/python.png" alt="Python" />
-          </span>
-          <span class="icon" data-label="Django">
-            <img src="./assets/images/django.png" alt="Django" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Nginx">
-            <img src="./assets/images/nginx.png" alt="Nginx" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>바풀 핵심 어플 바로풀기 웹 서비스 개발: 주요 기능으로 사진기반 질문과 답변, 회원 정보, 이야기 게시판, 이벤트 및 공지사항 채널, 그룹 페이지 제공</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바로풀기 관리자</h3>
-      <a href="https://drive.google.com/open?id=1Tx7ZS8CK35J1zOTpxkdp1EIWqtMmKeZD" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>바로풀기 서비스의 모든것을 관리하는 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Less">
-            <img src="./assets/images/less.png" alt="Less" />
-          </span>
-          <span class="icon" data-label="Coffeescript">
-            <img src="./assets/images/coffeescript.png" alt="Coffeescript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Python">
-            <img src="./assets/images/python.png" alt="Python" />
-          </span>
-          <span class="icon" data-label="Django">
-            <img src="./assets/images/django.png" alt="Django" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Nginx">
-            <img src="./assets/images/nginx.png" alt="Nginx" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>바로풀기 관리용 페이지 개발: 각종 신고, 베스트글, 회원, 선생님, 질문 및 그룹, 정적 이미지 생성, 푸쉬 등을 관리</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바풀공부방 소개</h3>
-      <a href="https://drive.google.com/open?id=1Jk4jYvZEUF17ry0x-rdSHnUSV7UW4rZU" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>1:1 학생과 선생님을 매칭시켜 스마트 과외를 제공하는 바풀공부방을 소개하는 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Python">
-            <img src="./assets/images/python.png" alt="Python" />
-          </span>
-          <span class="icon" data-label="Django">
-            <img src="./assets/images/django.png" alt="Django" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>홍보용 렌딩 페이지, 공부방 서비스에 대한 고객센터 페이지 개발</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바풀공부방 동영상 홍보</h3>
-      <a href="https://drive.google.com/open?id=17tDOhaIYoATUDya0sb20mSn1DfXxlwAj" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>유료서비스인 바풀공부방의 일부 기능을 간접적으로 체험할 수 있는 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="SVG">
-            <img src="./assets/images/svg.png" alt="SVG" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Python">
-            <img src="./assets/images/python.png" alt="Python" />
-          </span>
-          <span class="icon" data-label="Django">
-            <img src="./assets/images/django.png" alt="Django" />
-          </span>
-          <span class="icon" data-label="Firebase">
-            <img src="./assets/images/firebase.jpg" alt="Firebase" />
-          </span>
-          <span class="icon" data-label="Mobile">
-            <img src="./assets/images/mobile.png" alt="Mobile" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>유료앱인 바풀공부방을 간접적으로 체험할 수 있도록 몇몇 선생님들의 답변과 동영상을 웹으로 제공할 수 있도록 개발</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바풀공부방 관리자</h3>
-      <a href="https://drive.google.com/open?id=1GsgzXIeSfb8iO-7Y35K5sKy1Wm7ao_cV" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>바풀공부방의 모든것을 관리하는 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Sass">
-            <img src="./assets/images/sass.png" alt="Sass" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Gulp">
-            <img src="./assets/images/gulp.png" alt="Gulp" />
-          </span>
-          <span class="icon" data-label="Babel">
-            <img src="./assets/images/babel.png" alt="Babel" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>바풀공부방 관리자 페이지 개발(Bapul Starter Kit 사용)</dd>
-        <dd>회원 및 선생님 관리, 선생님 심사, 수업 관리, 결제 관리, 프로모션 및 이벤트 관리, 앱 팝업 및 배너 관리 등 효과적으로 바풀공부방을 관리할 수 있는 페이지</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바로단어장 관리자</h3>
-      <dl>
-        <dt>설명</dt>
-        <dd>사진을 찍어 영어단어장으로 만들어주는 바로단어장의 관리자 페이지</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Sass">
-            <img src="./assets/images/sass.png" alt="Sass" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Gulp">
-            <img src="./assets/images/gulp.png" alt="Gulp" />
-          </span>
-          <span class="icon" data-label="Babel">
-            <img src="./assets/images/babel.png" alt="Babel" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>(Bapul Starter Kit 사용)하여 개발: 사진을 인식해 단어장으로 만들어주는 서비스로 관리자 기능은 팝업 및 배너 관리만 사용</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>강의실</h3>
-      <a href="https://drive.google.com/open?id=1pe2qO-JbApc8TqWaIjq6g7Kcd56yrowH" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>중, 고등학교 수학전문 문제학습 및 인강 서비스</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Sass">
-            <img src="./assets/images/sass.png" alt="Sass" />
-          </span>
-          <span class="icon" data-label="D3">
-            <img src="./assets/images/d3.png" alt="D3" />
-          </span>
-          <span class="icon" data-label="Angular2">
-            <img src="./assets/images/angular2.jpg" alt="Angular2" />
-          </span>
-          <span class="icon" data-label="Typescript">
-            <img src="./assets/images/typescript.jpg" alt="Typescript" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Webpack">
-            <img src="./assets/images/webpack.png" alt="Webpack" />
-          </span>
-          <span class="icon" data-label="Angular cli">
-            <img src="./assets/images/angular-cli.jpg" alt="Angular cli" />
-          </span>
-          <span class="icon" data-label="PWA">
-            <img src="./assets/images/pwa.png" alt="PWA" />
-          </span>
-          <span class="icon" data-label="Mobile">
-            <img src="./assets/images/mobile.png" alt="Mobile" />
-          </span>
-          <span class="icon" data-label="Desktop">
-            <img src="./assets/images/desktop.png" alt="Desktop" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>수학문제, 개념동영상을 학년별 영역별을 연계시켜 수학을 체계적으로 공부할수 있는 웹사이트 개발</dd>
-        <dd>강의동영상시청,문제풀이,진도평가,학습현황 페이지 데스크탑 및 모바일용으로 각각 개발</dd>
-        <dd>자체 회원 로그인/회원가입 및 소셜 로그인 서비스 구현</dd>
-        <dd>강의실 지도, 각 학습 데이터를 활용한 현황 차트 개발 (D3.js)</dd>
-        <dd>자체 웹 서버에서 Math 데이터를 SVG 데이터로 변환 작업</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>강의실 결제</h3>
-      <a href="https://drive.google.com/open?id=1ww0zAOeZH5oB6NIR7SkoEySvp-NbfbGs" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>강의실만을 전용으로 한 웹결제 시스템</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Sass">
-            <img src="./assets/images/sass.png" alt="Sass" />
-          </span>
-          <span class="icon" data-label="Angular2">
-            <img src="./assets/images/angular2.jpg" alt="Angular2" />
-          </span>
-          <span class="icon" data-label="Typescript">
-            <img src="./assets/images/typescript.jpg" alt="Typescript" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Webpack">
-            <img src="./assets/images/webpack.png" alt="Webpack" />
-          </span>
-          <span class="icon" data-label="Angular cli">
-            <img src="./assets/images/angular-cli.jpg" alt="Angular cli" />
-          </span>
-          <span class="icon" data-label="Mobile">
-            <img src="./assets/images/mobile.png" alt="Mobile" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>강의실 전용 결제 페이지 개발</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>바풀 프로모션</h3>
-      <a href="https://drive.google.com/open?id=1dIrIcKXdpNTGKBRrIdM-YzQki2t3r6NF" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>프로모션 및 이벤트 페이지를 별도 도메인으로 따로 운영하여 관리하기 위한 목적으로 사용</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="ES6">
-            <img src="./assets/images/es6.jpg" alt="ES6" />
-          </span>
-          <span class="icon" data-label="Vuejs">
-            <img src="./assets/images/vuejs.png" alt="Vuejs" />
-          </span>
-          <span class="icon" data-label="Webpack">
-            <img src="./assets/images/webpack.png" alt="Webpack" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Pug">
-            <img src="./assets/images/pug.png" alt="Pug" />
-          </span>
-          <span class="icon" data-label="Mobile">
-            <img src="./assets/images/mobile.png" alt="Mobile" />
-          </span>
-          <span class="icon" data-label="Azure">
-            <img src="./assets/images/azure.png" alt="Azure" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>바풀에서 제공하는 모든 서비스에 대한 프로모션 페이지 개발</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>동국대학교 교/직원 내부 시스템</h3>
-      <dl>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="jQuery">
-            <img src="./assets/images/jQuery.png" alt="jQuery" />
-          </span>
-          <span class="icon" data-label="JSP">
-            <img src="./assets/images/jsp.jpg" alt="JSP" />
-          </span>
-          <span class="icon" data-label="Java">
-            <img src="./assets/images/java.png" alt="Java" />
-          </span>
-          <span class="icon" data-label="Oracle">
-            <img src="./assets/images/oracle.png" alt="Oracle" />
-          </span>
-          <span class="icon" data-label="Desktop">
-            <img src="./assets/images/desktop.png" alt="Desktop" />
-          </span>
-          <span class="icon" data-label="Apache">
-            <img src="./assets/images/apache.jpg" alt="Apache" />
-          </span>
-          <span class="icon" data-label="Tomcat">
-            <img src="./assets/images/tomcat.png" alt="Tomcat" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>성과평가, 다면평가, 교원업적평가, 직원역량평가 시스템 유지보수</dd>
-      </dl>
-    </li>
-    <li>
-      <h3>영남대학교 교/직원 내부 시스템</h3>
-      <dl>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="jQuery">
-            <img src="./assets/images/jQuery.png" alt="jQuery" />
-          </span>
-          <span class="icon" data-label="JSP">
-            <img src="./assets/images/jsp.jpg" alt="JSP" />
-          </span>
-          <span class="icon" data-label="Java">
-            <img src="./assets/images/java.png" alt="Java" />
-          </span>
-          <span class="icon" data-label="Spring">
-            <img src="./assets/images/spring.png" alt="Spring" />
-          </span>
-          <span class="icon" data-label="Hibernate">
-            <img src="./assets/images/hibernate.png" alt="Hibernate" />
-          </span>
-          <span class="icon" data-label="iBatis">
-            <img src="./assets/images/ibatis.jpg" alt="iBatis" />
-          </span>
-          <span class="icon" data-label="Oracle">
-            <img src="./assets/images/oracle.png" alt="Oracle" />
-          </span>
-          <span class="icon" data-label="Desktop">
-            <img src="./assets/images/desktop.png" alt="Desktop" />
-          </span>
-          <span class="icon" data-label="Apache">
-            <img src="./assets/images/apache.jpg" alt="Apache" />
-          </span>
-          <span class="icon" data-label="Tomcat">
-            <img src="./assets/images/tomcat.png" alt="Tomcat" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>평가 솔루션 개발 및 유지보수, 차트 및 그리드 도입</dd>
-      </dl>
-    </li>
-    <li>
-      <h3>칸테크 대외평가, 교육원가, 경영계획 시스템</h3>
-      <dl>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="jQuery">
-            <img src="./assets/images/jQuery.png" alt="jQuery" />
-          </span>
-          <span class="icon" data-label="JSP">
-            <img src="./assets/images/jsp.jpg" alt="JSP" />
-          </span>
-          <span class="icon" data-label="Java">
-            <img src="./assets/images/java.png" alt="Java" />
-          </span>
-          <span class="icon" data-label="Spring">
-            <img src="./assets/images/spring.png" alt="Spring" />
-          </span>
-          <span class="icon" data-label="Hibernate">
-            <img src="./assets/images/hibernate.png" alt="Hibernate" />
-          </span>
-          <span class="icon" data-label="Mybatis">
-            <img src="./assets/images/mybatis.png" alt="Mybatis" />
-          </span>
-          <span class="icon" data-label="AmChart">
-            <img src="./assets/images/amcharts.png" alt="AmChart" />
-          </span>
-          <span class="icon" data-label="Highcharts">
-            <img src="./assets/images/highcharts.jpg" alt="Highcharts" />
-          </span>
-          <span class="icon" data-label="Axisj">
-            <img src="./assets/images/axisj.png" alt="Axisj" />
-          </span>
-          <span class="icon" data-label="Oracle">
-            <img src="./assets/images/oracle.png" alt="Oracle" />
-          </span>
-          <span class="icon" data-label="Desktop">
-            <img src="./assets/images/desktop.png" alt="Desktop" />
-          </span>
-          <span class="icon" data-label="Apache">
-            <img src="./assets/images/apache.jpg" alt="Apache" />
-          </span>
-          <span class="icon" data-label="Tomcat">
-            <img src="./assets/images/tomcat.png" alt="Tomcat" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>평가 솔루션 개발 및 유지보수, 차트 및 그리드 도입</dd>
-        <dd>HightCharts, AmCharts를 이용하여 데이터 시각화 구현</dd>
-        <dd>Axisj 라이브러리를 이용하여 그리드 구현</dd>
-        <dd>오라클 프로시져, 패키지를 이용하여 평가시스템 데이터 맞춤 개발</dd>
-      </dl>
-    </li>
-    <li>
-      <h3>칸테크 프로젝트관리 시스템</h3>
-      <dl>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="jQuery">
-            <img src="./assets/images/jQuery.png" alt="jQuery" />
-          </span>
-          <span class="icon" data-label="JSP">
-            <img src="./assets/images/jsp.jpg" alt="JSP" />
-          </span>
-          <span class="icon" data-label="Java">
-            <img src="./assets/images/java.png" alt="Java" />
-          </span>
-          <span class="icon" data-label="Spring">
-            <img src="./assets/images/spring.png" alt="Spring" />
-          </span>
-          <span class="icon" data-label="Hibernate">
-            <img src="./assets/images/hibernate.png" alt="Hibernate" />
-          </span>
-          <span class="icon" data-label="Mybatis">
-            <img src="./assets/images/mybatis.png" alt="Mybatis" />
-          </span>
-          <span class="icon" data-label="Redmine">
-            <img src="./assets/images/redmine.png" alt="Redmine" />
-          </span>
-          <span class="icon" data-label="Oracle">
-            <img src="./assets/images/oracle.png" alt="Oracle" />
-          </span>
-          <span class="icon" data-label="Desktop">
-            <img src="./assets/images/desktop.png" alt="Desktop" />
-          </span>
-          <span class="icon" data-label="Apache">
-            <img src="./assets/images/apache.jpg" alt="Apache" />
-          </span>
-          <span class="icon" data-label="Tomcat">
-            <img src="./assets/images/tomcat.png" alt="Tomcat" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>Redmine을 Custom하여 화면을 회사에 맞게 재구현</dd>
-      </dl>
-    </li>
-  </ul>
-  <br>
-
-  <h2>사이드 프로젝트</h2>
-  <ul id="side-projects">
-    <li>
-      <h3>
-        할 일
-        <small>(개발 중단 상태)</small>
-      </h3>
-      <a href="https://github.com/weooops/todo-web" target="_blank">
-        <img class="image" src="./assets/images/github.svg" alt="WEB 깃허브" style="width:24px" />
-      </a>
-      <a href="https://github.com/weooops/todo-api" target="_blank">
-        <img class="image" src="./assets/images/github.svg" alt="API 깃허브" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>글로벌 SNS기반으로 모두와 함께하는 TODO 리스트</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="React">
-            <img src="./assets/images/react.png" alt="React" />
-          </span>
-          <span class="icon" data-label="Redux">
-            <img src="./assets/images/redux.png" alt="Redux" />
-          </span>
-          <span class="icon" data-label="Typescript">
-            <img src="./assets/images/typescript.jpg" alt="Typescript" />
-          </span>
-          <span class="icon" data-label="Jest">
-            <img src="./assets/images/jest.png" alt="Jest" />
-          </span>
-          <span class="icon" data-label="Enzyme">
-            <img src="./assets/images/enzyme.png" alt="Enzyme" />
-          </span>
-          <span class="icon" data-label="Storybook">
-            <img src="./assets/images/storybookjs.png" alt="Storybook" />
-          </span>
-          <span class="icon" data-label="Cypress">
-            <img src="./assets/images/cypress.png" alt="Cypress" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Mysql">
-            <img src="./assets/images/mysql.png" alt="Mysql" />
-          </span>
-          <span class="icon" data-label="MongoDB">
-            <img src="./assets/images/mongodb.png" alt="MongoDB" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>회원관리 로직 개발 (MongoDB), 기본 서비스 Nodejs ORM 사용(Mysql)</dd>
-        <dd>AWS beanstalk, S3, RDS, CloudFront</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>
-        <a href="https://weather.ooops.kr" target="_blank">날씨</a>
-        <small>(API 사용 중단 상태)</small>
-      </h3>
-      <a href="https://github.com/weooops/weather-web" target="_blank">
-        <img class="image" src="./assets/images/github.svg" alt="깃허브 소스코드 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>오늘 및 이번 주 날씨만을 표시하는 심플한 날씨 웹</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="React">
-            <img src="./assets/images/react.png" alt="React" />
-          </span>
-          <span class="icon" data-label="Redux">
-            <img src="./assets/images/redux.png" alt="Redux" />
-          </span>
-          <span class="icon" data-label="React Router">
-            <img src="./assets/images/react-router.png" alt="React Router" />
-          </span>
-          <span class="icon" data-label="i18next">
-            <img src="./assets/images/i18next.png" alt="i18next" />
-          </span>
-          <span class="icon" data-label="Yahoo API">
-            <img src="./assets/images/yahoo.png" alt="Yahoo API"API" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="AWS S3">
-            <img src="./assets/images/aws-s3.png" alt="AWS S3"S3" />
-          </span>
-          <span class="icon" data-label="AWS CloudFront">
-            <img src="./assets/images/aws-cloudfront.png" alt="AWS CloudFront" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>지역찾기 및 현재위치를기 반으로 도시를 설정할 수 있으며 i18next를 이용하여 다국어를 지원</dd>
-        <dd>배경이미지는 계절별, 시간별, 날씨별로 표시되고 해당 사진을 앞에 분류에 맞게 선정하여 일정시간에 따라 사진을 교체</dd>
-        <dd>AWS S3, CloudFront를 이용, HTTPS가 필요한 위치기반 서비스이므로 AWS SSL 인증서 사용</dd>
-      </dl>
-    </li>
-
-    <li>
-      <h3>그램 <small>(서비스 종료)</small></h3>
-      <a href="https://drive.google.com/open?id=1nUm_xRGHvoRViwH0sZqEpBXOwW6XgOLM" target="_blank">
-        <img class="image" src="./assets/images/google-drive.svg" alt="구글 드라이브로 이미지 보러가기" style="width:24px" />
-      </a>
-      <dl>
-        <dt>설명</dt>
-        <dd>인기 있는 여성 쇼핑몰을 카테고리별로 보여주는 웹 서비스</dd>
-        <dt>주사용기술</dt>
-        <dd class="icon-container">
-          <span class="icon" data-label="HTML5">
-            <img src="./assets/images/html5.png" alt="HTML5" />
-          </span>
-          <span class="icon" data-label="CSS3">
-            <img src="./assets/images/css3.png" alt="CSS3" />
-          </span>
-          <span class="icon" data-label="Sass">
-            <img src="./assets/images/sass.png" alt="Sass" />
-          </span>
-          <span class="icon" data-label="Javascript">
-            <img src="./assets/images/javascript.jpeg" alt="Javascript" />
-          </span>
-          <span class="icon" data-label="Vuejs">
-            <img src="./assets/images/vuejs.png" alt="Vuejs" />
-          </span>
-          <span class="icon" data-label="Nuxtjs">
-            <img src="./assets/images/nuxtjs.png" alt="Nuxtjs" />
-          </span>
-          <span class="icon" data-label="Webpack">
-            <img src="./assets/images/webpack.png" alt="Webpack" />
-          </span>
-          <span class="icon" data-label="Angular1">
-            <img src="./assets/images/angular1.png" alt="Angular1" />
-          </span>
-          <span class="icon" data-label="Babel">
-            <img src="./assets/images/babel.png" alt="Babel" />
-          </span>
-          <span class="icon" data-label="Gulp">
-            <img src="./assets/images/gulp.png" alt="Gulp" />
-          </span>
-          <span class="icon" data-label="Nodejs">
-            <img src="./assets/images/nodejs.png" alt="Nodejs" />
-          </span>
-          <span class="icon" data-label="Mysql">
-            <img src="./assets/images/mysql.png" alt="Mysql" />
-          </span>
-          <span class="icon" data-label="RWD">
-            <img src="./assets/images/rwd.png" alt="RWD" />
-          </span>
-          <span class="icon" data-label="Nginx">
-            <img src="./assets/images/nginx.png" alt="Nginx" />
-          </span>
-          <span class="icon" data-label="AWS EC2">
-            <img src="./assets/images/aws-ec2.png" alt="AWS EC2" />
-          </span>
-          <span class="icon" data-label="AWS RDS">
-            <img src="./assets/images/aws-rds.png" alt="AWS RDS" />
-          </span>
-          <span class="icon" data-label="AWS Route53">
-            <img src="./assets/images/aws-route-53.png" alt="AWS Route53" />
-          </span>
-        </dd>
-        <dt>프로젝트 수행 역할</dt>
-        <dd>Vue와 Nuxt이용하여 View 구현 (RWD)</dd>
-        <dd>Angular를 이용하여 쇼핑몰 관리페이지 개발</dd>
-        <dd>관리자 계정은 MongoDB를 이용하고 쇼핑몰 데이터는 Mysql을 이용하여 구현</dd>
-        <dd>RESTful API 구현</dd>
-        <dd>Nodejs를 이용하여 관리자 페이지에 등록된 쇼핑몰을 통해 매일 데이터를 업로드(스케쥴링, 크롤링)</dd>
-      </dl>
-    </li>
-  </ul>
-</div>
-</body>
+    </script>
+  </body>
 </html>
